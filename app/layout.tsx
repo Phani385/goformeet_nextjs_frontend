@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { Arimo } from "next/font/google";
 import "./globals.css";
+import { cn } from "@/lib/utils";
 
-const arimo = Arimo({ subsets: ["latin"] });
+const arimo = Arimo({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata: Metadata = {
   title: "Goformeet",
@@ -16,7 +17,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={arimo.className}>{children}</body>
+      <body className={cn("font-sans antialiased", arimo.variable)}>
+        {children}
+      </body>
     </html>
   );
 }
