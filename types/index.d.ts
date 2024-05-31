@@ -26,6 +26,7 @@ declare interface PersonalDetails {
   dateOfBirth?: string;
   isVerified?: boolean;
   city?: string;
+  state?: string;
   meetingFee?: number;
   moreAboutMe?: MoreAboutMe;
 }
