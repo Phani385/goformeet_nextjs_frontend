@@ -52,7 +52,7 @@
 }
 
 .custom-container {
-  @apply px-4 md:px-6 lg:px-24 xl:px-28 min-[1360px]:px-64;
+  @apply px-4 md:px-6 lg:px-16 xl:px-28 min-[1360px]:px-64;
 }
 
 .navbar {

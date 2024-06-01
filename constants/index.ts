@@ -12,4 +12,3 @@ export const navLinks  = [
         route: "/pricing"
     },
 ]
-

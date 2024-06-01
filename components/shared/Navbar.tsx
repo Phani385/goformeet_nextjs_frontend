@@ -8,7 +8,6 @@ const Navbar = () => {
     <nav className="navbar custom-container">
       <Link href="/">
         <Image
-          priority
           src="/assets/images/goformeetNavLogo.svg"
           alt="logo"
           width={190}

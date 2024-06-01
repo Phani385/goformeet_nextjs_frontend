@@ -22,11 +22,11 @@ declare interface PersonalDetails {
   languages?: string[];
   gender?: "Male" | "Female" | "Other";
   interests?: string[];
-  state?: string;
   aboutMe?: string;
   dateOfBirth?: string;
   isVerified?: boolean;
   city?: string;
+  state?: string;
   meetingFee?: number;
   moreAboutMe?: MoreAboutMe;
 }
