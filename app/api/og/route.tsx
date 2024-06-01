@@ -1,3 +1,4 @@
+import { Arimo } from 'next/font/google';
 import { ImageResponse } from 'next/og';
 // App router includes @vercel/og.
 // No need to install it.
@@ -16,12 +17,15 @@ export async function GET(request: Request) {
 
     const imageUrl = `https://goformeet.s3.ap-south-1.amazonaws.com/${username}/${username}_1.png`;
 
+    const arimo = Arimo({ subsets: ["latin"], variable: "--font-sans" });
+
 
     return new ImageResponse(
       (
         <div
           style={{
             fontSize: 40,
+            fontFamily: arimo.variable,
             color: 'black',
             background: 'white',
             width: '100%',
@@ -34,9 +38,9 @@ export async function GET(request: Request) {
           }}
         >
           <img src="https://goformeet-nextjs-frontend.vercel.app/assets/images/ogImage.png" tw="w-full h-full absolute top-0 left-0" />
-          <h2 tw='absolute font-bold top-45 left-[490px] z-10'> {name} </h2>
-          <img src={imageUrl} alt='og-image' tw='w-[348px] h-[464px] absolute top-21 left-22 rounded-lg' />
-          <h4 tw="pt-32 pl-42 text-normal">{`goformeet.co/${username}`}</h4>
+          <h2 tw='absolute font-bold top-48 left-[465px] z-10'> {name} </h2>
+          <img src={imageUrl} alt='og-image' tw='w-[329px] h-[472px] absolute top-20 left-21 rounded-lg' />
+          <h4 tw="pt-32 pl-28 text-normal">{`goformeet.co/${username}`}</h4>
         </div>
       ),
       {
