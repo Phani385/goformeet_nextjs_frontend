@@ -39,6 +39,7 @@ const Profile = ({
     profileData ? (
       <>
         <Head>
+          <meta property="og:title" content={profileData.personalDetails.name} />
           <meta property="og:image" content={`https://goformeet-nextjs-frontend.vercel.app/api/og?name=${profileData.personalDetails.name}&username=${username}`} />
         </Head>
 
