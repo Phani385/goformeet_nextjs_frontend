@@ -25,8 +25,6 @@ export async function generateMetadata({ params }: Props, parent: ResolvingMetad
     const profileData = profile.profile;
 
     return {
-      title: `${profileData.personalDetails.name}`,
-      description: `Learn more about ${profileData.personalDetails.name}, their interests, and professional background.`,
       openGraph: {
         images: [
           {
