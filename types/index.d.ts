@@ -12,12 +12,12 @@ declare interface MoreAboutMe {
 }
 
 declare interface PersonalDetails {
-  name?: string;
+  name: string;
   profession?: string;
   profilePercentage?: number;
   mobileNumber: string;
   email?: string;
-  userName?: string;
+  userName: string;
   profileImages?: string[];
   languages?: string[];
   gender?: "Male" | "Female" | "Other";
