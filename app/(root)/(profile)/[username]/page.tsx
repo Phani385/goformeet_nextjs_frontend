@@ -23,13 +23,17 @@ export async function generateMetadata({ params }: Props, parent: ResolvingMetad
     }
     const profile = await profileResponse.json();
     const profileData = profile.profile;
-    console.log(profileData);
 
     return {
       title: `${profileData.personalDetails.name}`,
       description: `Learn more about ${profileData.personalDetails.name}, their interests, and professional background.`,
       openGraph: {
-        images: [`https://goformeet-nextjs-frontend.vercel.app/api/og?name=${encodeURIComponent(profileData.personalDetails.name)}&username=${username}`]
+        images: [
+          {
+            url: `https://goformeet-nextjs-frontend.vercel.app/api/og?name=${encodeURIComponent(profileData.personalDetails.name)}&username=${username}`,
+            width: 1200,
+            height: 630,
+          }],
       }
     };
   } catch (error) {
