@@ -162,7 +162,7 @@ async function Profile({ params }: Props) {
             <section className="profile-bottom-section">
               <h2 className="profile-bottom-heading">My Interests</h2>
               <ul className="profile-cards-container">
-                {profileData.personalDetails.interests?.map((interest, index) => (
+                {profileData.personalDetails.interests?.map((interest: string, index: number) => (
                   <ProfileTextCard key={index} content={interest} />
                 ))}
               </ul>
