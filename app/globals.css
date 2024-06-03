@@ -76,6 +76,18 @@
   @apply relative rounded-md w-64 h-[320px] overflow-hidden;
 }
 
+.slides-container{
+  @apply flex transition-transform ease-out duration-500;
+}
+
+.carousel-buttons-container{
+  @apply absolute inset-0 flex top-60 items-center justify-center gap-4 p-4;
+}
+
+.carousel-button{
+  @apply p-1 rounded-full shadow bg-[#FCEBE650] text-white hover:bg-[#FCEBE6] hover:text-black;
+}
+
 .like-icon {
   @apply absolute top-2 right-2 cursor-pointer;
 }

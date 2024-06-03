@@ -18,8 +18,10 @@ const CarouselImage = ({ images }: { images: string[] }) => {
 
   return (
     <div className="carousel-image-container">
-      <div className="flex transition-transform ease-out duration-500"
-        >
+      <div>
+        <Image alt="" src="/assets/icons/like.svg" className="like-icon" width={40} height={40} />
+      </div>
+      <div className="slides-container">
         <Image
           src={images[currentImage]}
           alt="carousel image"
@@ -29,15 +31,15 @@ const CarouselImage = ({ images }: { images: string[] }) => {
           className="rounded-lg"
         />
       </div>
-      <div className="absolute inset-0 flex top-60 items-center justify-center gap-4 p-4">
+      <div className="carousel-buttons-container">
         <button
-          className="p-1 rounded-full shadow bg-[#FCEBE650] text-white hover:bg-[#FCEBE6] hover:text-black"
+          className="carousel-button"
           onClick={prev}
         >
           <FaAngleLeft size={20} />
         </button>
         <button
-          className="p-1 rounded-full shadow bg-[#FCEBE650] text-white hover:bg-[#FCEBE6] hover:text-black"
+          className="carousel-button"
           onClick={next}
         >
           <FaAngleRight size={20} />

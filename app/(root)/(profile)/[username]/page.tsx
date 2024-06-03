@@ -65,6 +65,8 @@ async function Profile({ params }: Props) {
 
 
   const profileData = await getProfileData();
+  console.log(profileData)
+  console.log(profileData.personalDetails.languages)
 
   return (
     profileData ? (
@@ -138,17 +140,9 @@ async function Profile({ params }: Props) {
           </div>
         </div>
         <div className="custom-container profile-bottom-container">
-          <div className="mt-48  max-w-64 text-justify text-sm">
+          <div className="mt-48  w-64 text-justify text-sm">
             <p>
-              Welcome! I&apos; m John Doe, a seasoned Senior Consultant with over
-              a decade of experience in the tech industry. My journey in
-              technology began with a deep-seated passion for innovation and a
-              relentless drive to solve complex problems. Over the years, I have
-              honed my skills and expertise in software development, project
-              management, and agile methodologies, making significant
-              contributions to various high-profile projects and organizations.
-              Throughout my career, I have had the privilege of working with some
-              of the leading companies in the tech sector.
+             {profileData.personalDetails.aboutMe}
             </p>
             <div className="seperation-line"></div>
           </div>
@@ -172,12 +166,11 @@ async function Profile({ params }: Props) {
             <section className="profile-bottom-section">
               <h2 className="profile-bottom-heading">My Languages</h2>
               <ul className="profile-cards-container">
-                <ProfileTextCard content="Hello" />
-                <ProfileTextCard content="Hello" />
-                <ProfileTextCard content="Hello" />
-                <ProfileTextCard content="Hello" />
-                <ProfileTextCard content="Hello" />
-                <ProfileTextCard content="Hello" />
+               {
+                  profileData.personalDetails.languages?.map((language: string, index: number) => (
+                    <ProfileTextCard key={index} content={language} />
+                  ))
+               }
               </ul>
             </section>
             <section className="profile-bottom-section">
