@@ -66,21 +66,13 @@ async function Profile({ params }: Props) {
 
   const profileData = await getProfileData();
 
-  if (profileData) {
-    name = encodeURIComponent(profileData.personalDetails.name?.trim());
-    userName = encodeURIComponent(username);
-
-    url = `https://goformeet-nextjs-frontend.vercel.app/api/og?name=${name}&username=${username}`;
-  }
-
-
   return (
     profileData ? (
 
       <section>
         <div className="profile-top-container custom-container">
           <div className="">
-            <CarouselImage />
+            <CarouselImage images={profileData.personalDetails.profileImages} />
           </div>
           <div className="profile-top-right">
             <div>

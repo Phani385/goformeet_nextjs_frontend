@@ -73,7 +73,7 @@
 }
 
 .carousel-image-container {
-  @apply relative rounded-md w-64;
+  @apply relative rounded-md w-64 h-[320px] overflow-hidden;
 }
 
 .like-icon {
