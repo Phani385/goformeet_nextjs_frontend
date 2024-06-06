@@ -1,25 +1,28 @@
 import CarouselImage from "@/components/shared/CarouselImage";
 import Loader from "@/components/shared/Loader";
 import ProfileTextCard from "@/components/shared/ProfileTextCard";
-import { Button } from "@/components/ui/button";
-import { IProfile } from "@/types";
+import DownloadAppModal from "@/components/shared/DownloadAppModal";
 import { Metadata, ResolvingMetadata } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 
-
 type Props = {
-  params: { username: string }
-}
+  params: { username: string };
+};
 
-export async function generateMetadata({ params }: Props, parent: ResolvingMetadata): Promise<Metadata> {
+export async function generateMetadata(
+  { params }: Props,
+  parent: ResolvingMetadata
+): Promise<Metadata> {
   const username = params.username;
 
   try {
-    const profileResponse = await fetch(`https://goformeet-backend.onrender.com/get-profile/${username}`);
+    const profileResponse = await fetch(
+      `https://goformeet-backend.onrender.com/get-profile/${username}`
+    );
     if (!profileResponse.ok) {
-      throw new Error('Network response was not ok');
+      throw new Error("Network response was not ok");
     }
     const profile = await profileResponse.json();
     const profileData = profile.profile;
@@ -28,14 +31,17 @@ export async function generateMetadata({ params }: Props, parent: ResolvingMetad
       openGraph: {
         images: [
           {
-            url: `https://goformeet-nextjs-frontend.vercel.app/api/og?name=${encodeURIComponent(profileData.personalDetails.name)}&username=${username}`,
+            url: `https://goformeet-nextjs-frontend.vercel.app/api/og?name=${encodeURIComponent(
+              profileData.personalDetails.name
+            )}&username=${username}`,
             width: 1200,
             height: 630,
-          }],
-      }
+          },
+        ],
+      },
     };
   } catch (error) {
-    console.error('Error fetching profile data:', error);
+    console.error("Error fetching profile data:", error);
     return {
       title: "Error",
       description: "An error occurred while fetching the profile data.",
@@ -43,13 +49,8 @@ export async function generateMetadata({ params }: Props, parent: ResolvingMetad
   }
 }
 
-
 async function Profile({ params }: Props) {
   const username = params.username;
-
-  let name = "";
-  let userName = "";
-  let url = "";
 
   async function getProfileData() {
     try {
@@ -60,131 +61,143 @@ async function Profile({ params }: Props) {
       return data.profile;
     } catch (error) {
       console.error(error);
+      return null;
     }
-  };
-
+  }
 
   const profileData = await getProfileData();
-  console.log(profileData)
-  console.log(profileData.personalDetails.languages)
+
+  if (!profileData) {
+    return <Loader />;
+  }
 
   return (
-    profileData ? (
-
-      <section>
-        <div className="profile-top-container custom-container">
-          <div className="">
-            <CarouselImage images={profileData.personalDetails.profileImages} />
+    <section>
+      <div className="profile-top-container custom-container">
+        <div>
+          <CarouselImage images={profileData.personalDetails.profileImages} />
+        </div>
+        <div className="profile-top-right">
+          <div>
+            <h1 className="host-name">
+              {profileData.personalDetails.name}{" "}
+              <span className="host-username">
+                @{profileData.personalDetails.userName}
+              </span>
+            </h1>
+            <h2 className="host-profession">
+              {profileData.personalDetails.profession}
+            </h2>
+            <p className="top-3-interests">
+              {profileData.personalDetails.interests?.slice(0, 3).join(" | ")}
+            </p>
           </div>
-          <div className="profile-top-right">
-            <div>
-              <h1 className="host-name">
-                {profileData.personalDetails.name}{" "}
-                <span className="host-username">@{profileData.personalDetails.userName}</span>
-              </h1>
-              <h2 className="host-profession">{profileData.personalDetails.profession}</h2>
-              <p className="top-3-intrests">
-                {profileData.personalDetails.interests?.slice(0, 3).join(" | ")}
-              </p>
+          <div>
+            <div className="flex justify-end">
+              <DownloadAppModal />
             </div>
-            <div>
-              <div className="flex justify-end">
-                <Button className="secondary-button gap-2 items-center">
-                  Book Meeting{" "}
+            <h4 className="city-details">
+              📍{profileData.personalDetails.city} - City in{" "}
+              {profileData.personalDetails.state}
+            </h4>
+            <ul className="social-links-container">
+              <li>
+                <Link href="/">
                   <Image
-                    alt=""
-                    src="/assets/icons/rightArrow.svg"
-                    width={16}
-                    height={16}
-                  />
-                </Button>
-              </div>
-              <h4 className="city-details">📍{profileData.personalDetails.city} - City in {profileData.personalDetails.state}</h4>
-              <ul className="social-links-container">
-                <li>
-                  <Link href="/">
-                    <Image
-                      src="/assets/icons/linkedin.svg"
-                      width={20}
-                      height={20}
-                      alt="linkedin"
-                    />
-                  </Link>
-                </li>
-                <li>
-                  <Image
-                    src="/assets/icons/youtube.svg"
+                    src="/assets/icons/linkedin.svg"
                     width={20}
                     height={20}
-                    alt="linkedin"
+                    alt="LinkedIn"
                   />
-                </li>
-                <li>
-                  <Image
-                    src="/assets/icons/behance.svg"
-                    width={20}
-                    height={20}
-                    alt="linkedin"
-                  />
-                </li>
-                <li>
-                  <Image
-                    src="/assets/icons/twitter.svg"
-                    width={20}
-                    height={20}
-                    alt="linkedin"
-                  />
-                </li>
-              </ul>
-            </div>
+                </Link>
+              </li>
+              <li>
+                <Image
+                  src="/assets/icons/youtube.svg"
+                  width={20}
+                  height={20}
+                  alt="YouTube"
+                />
+              </li>
+              <li>
+                <Image
+                  src="/assets/icons/behance.svg"
+                  width={20}
+                  height={20}
+                  alt="Behance"
+                />
+              </li>
+              <li>
+                <Image
+                  src="/assets/icons/twitter.svg"
+                  width={20}
+                  height={20}
+                  alt="Twitter"
+                />
+              </li>
+            </ul>
           </div>
         </div>
-        <div className="custom-container profile-bottom-container">
-          <div className="mt-48  w-64 text-justify text-sm">
-            <p>
-             {profileData.personalDetails.aboutMe}
-            </p>
-            <div className="seperation-line"></div>
-          </div>
-          <div className="profile-bottom-right">
-            <section className="profile-bottom-section">
-              <h2 className="profile-bottom-heading">My Interests</h2>
-              <ul className="profile-cards-container">
-                {profileData.personalDetails.interests?.map((interest: string, index: number) => (
+      </div>
+      <div className="custom-container profile-bottom-container">
+        <div className="mt-48 w-64 text-justify text-sm">
+          <p>{profileData.personalDetails.aboutMe}</p>
+          <div className="separation-line"></div>
+        </div>
+        <div className="profile-bottom-right">
+          <section className="profile-bottom-section">
+            <h2 className="profile-bottom-heading">My Interests</h2>
+            <ul className="profile-cards-container">
+              {profileData.personalDetails.interests?.map(
+                (interest: string, index: number) => (
                   <ProfileTextCard key={index} content={interest} />
-                ))}
+                )
+              )}
+            </ul>
+          </section>
+          {profileData.personalDetails.moreAboutMe?.lookingFor && (
+            <section className="profile-bottom-section">
+              <h2 className="profile-bottom-heading">Looking For</h2>
+              <ul className="profile-cards-container">
+                <ProfileTextCard
+                  content={profileData.personalDetails.moreAboutMe?.lookingFor}
+                />
               </ul>
             </section>
-            {
-              profileData.personalDetails.moreAboutMe?.lookingFor && <section className="profile-bottom-section">
-                <h2 className="profile-bottom-heading">Looking For</h2>
-                <ul className="profile-cards-container">
-                  <ProfileTextCard content={profileData.personalDetails.moreAboutMe?.lookingFor} />
-                </ul>
-              </section>
-            }
+          )}
+          {profileData.personalDetails.languages && (
             <section className="profile-bottom-section">
               <h2 className="profile-bottom-heading">My Languages</h2>
               <ul className="profile-cards-container">
-               {
-                  profileData.personalDetails.languages?.map((language: string, index: number) => (
+                {profileData.personalDetails.languages?.map(
+                  (language: string, index: number) => (
                     <ProfileTextCard key={index} content={language} />
-                  ))
-               }
+                  )
+                )}
               </ul>
             </section>
-            <section className="profile-bottom-section">
-              <h2 className="profile-bottom-heading">More About Me</h2>
-              <ul className="profile-cards-container">
-                <ProfileTextCard content="Hello" />
-                <ProfileTextCard content="Hello" />
-              </ul>
-            </section>
-          </div>
+          )}
+          <section className="profile-bottom-section">
+            <h2 className="profile-bottom-heading">More About Me</h2>
+            <ul className="profile-cards-container">
+              <ProfileTextCard
+                content={`Height - ${profileData.personalDetails.moreAboutMe?.height}`}
+              />
+              <ProfileTextCard
+                content={profileData.personalDetails.moreAboutMe.educationLevel}
+              />
+              <ProfileTextCard
+                content={`Personality Type - ${profileData.personalDetails.moreAboutMe.personalityType}`}
+              />
+              <ProfileTextCard
+                content={profileData.personalDetails.moreAboutMe.smokingHabits}
+              />
+            </ul>
+          </section>
         </div>
-      </section>
-    ) : <Loader />
+      </div>
+    </section>
   );
-};
+}
 
 export default Profile;
