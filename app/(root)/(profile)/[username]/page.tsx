@@ -19,7 +19,7 @@ export async function generateMetadata(
 
   try {
     const profileResponse = await fetch(
-      `https://goformeet-backend.onrender.com/get-profile/${username}`
+      `${process.env.BACKEND_URL}/get-profile/${username}`
     );
     if (!profileResponse.ok) {
       throw new Error("Network response was not ok");

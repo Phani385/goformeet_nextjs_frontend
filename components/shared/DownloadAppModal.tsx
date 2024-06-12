@@ -13,7 +13,7 @@ import Link from "next/link";
   const DownloadAppModal = () => {
     return (
       <Dialog>
-        <DialogTrigger>
+        <DialogTrigger asChild>
             <Button className="secondary-button gap-2 items-center">
           Book Meeting
           <Image
