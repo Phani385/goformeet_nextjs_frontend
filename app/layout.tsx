@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn("font-sans antialiased", arimo.variable)}>
+      <body className={cn("font-sans antialiased bg-[#FCEBE6] min-h-screen flex flex-col", arimo.variable)}>
         <Navbar />
         {children}
       </body>
