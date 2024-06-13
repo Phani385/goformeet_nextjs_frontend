@@ -3,6 +3,7 @@ import { Arimo } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import Navbar from "@/components/shared/Navbar";
+import Footer from "@/components/shared/Footer";
 
 const arimo = Arimo({ subsets: ["latin"], variable: "--font-sans" });
 
@@ -18,9 +19,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn("font-sans antialiased bg-[#FCEBE6] min-h-screen flex flex-col", arimo.variable)}>
+      <body className={cn("font-sans antialiased min-h-screen flex flex-col", arimo.variable)}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

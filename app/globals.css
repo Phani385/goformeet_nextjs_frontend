@@ -153,3 +153,19 @@
 .profile-cards-container{
   @apply flex flex-wrap gap-5;
 }
+
+
+.footer-bg{
+  @apply top-0 left-0 bg-white absolute w-full h-auto z-10;
+}
+
+
+.footer-social-link{
+  @apply bg-[#E03300] text-white rounded-md p-2;
+}
+
+.footer{
+  background: url('/assets/images/footerBg.png') #fff;
+  background-size: cover;
+  @apply relative pb-20 flex flex-wrap justify-center items-start gap-8 px-4 md:px-6 lg:px-16 xl:pl-36 min-[1360px]:pl-24 min-[1360px]:pr-0 pt-80 lg:pt-60;
+}

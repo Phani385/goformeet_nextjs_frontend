@@ -1,10 +1,11 @@
+import Footer from "@/components/shared/Footer";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
 export default function Home() {
   return (
     <>
-      <main className="custom-container mx-auto bg-[#FCEBE6] flex-1 flex items-center justify-center gap-10">
+      <main className="custom-container mx-auto bg-[#FCEBE6] h-[90vh] flex items-center justify-center gap-10">
         <div className="flex-1">
           <h1 className="text-5xl font-bold w-[80%] mb-4">
             Guaranteed Meetings with{" "}
@@ -44,10 +45,7 @@ export default function Home() {
             </Button>
           </div>
         </div>
-        <div
-          style={{ width: "100%", height: "100%" }}
-          className="flex-1 flex justify-end"
-        >
+        <div className="flex-1 flex justify-end">
           <Image
             src="/assets/images/hero.png"
             width={400}
@@ -56,6 +54,7 @@ export default function Home() {
           />
         </div>
       </main>
+      <div className="bg-[#fff] h-[400px]"></div>
     </>
   );
 }
