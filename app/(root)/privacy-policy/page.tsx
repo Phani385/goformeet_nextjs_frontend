@@ -141,8 +141,7 @@ const PrivacyPolicy = () => {
           considers you to be a good match with that user. Your Account,
           including pictures, might be displayed on the homepage of Goformeet
           for public viewing with your consent.
-        </p>
-        
+        </p>  
       </div>
     </div>
   );
