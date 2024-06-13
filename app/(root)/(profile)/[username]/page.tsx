@@ -57,7 +57,7 @@ async function Profile({ params }: Props) {
       const response = await fetch(
         `${process.env.BACKEND_URL}/get-profile/${username}`
       );
-
+      console.log(process.env.BACKEND_URL)
       const data = await response.json();
       return data.profile;
     } catch (error) {
