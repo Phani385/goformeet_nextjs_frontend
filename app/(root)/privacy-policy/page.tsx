@@ -7,14 +7,14 @@ const PrivacyPolicy = () => {
         <h2 className="privacy-policy-heading">Privacy Policy</h2>
         <p className="privacy-policy-para">
           Goformeet is strongly committed to your right to privacy. This section
-          covers Goformeet’'s privacy policy that highlights how we handle
+          covers Goformeet&apos;privacy policy that highlights how we handle
           personally identifiable information that Goformeet collects when you
           are on our Website or App. Please read this privacy policy carefully.
-          All information covered by Goformeet's privacy policy will continue to
-          be protected under Goformeet's privacy policy irrespective of any
-          change in your membership status in the future. By using the Goformeet
-          Website or App, you accept all practices described in this privacy
-          policy.
+          All information covered by Goformeet&apos;s privacy policy will
+          continue to be protected under Goformeet&apos;s privacy policy
+          irrespective of any change in your membership status in the future. By
+          using the Goformeet Website or App, you accept all practices described
+          in this privacy policy.
         </p>
       </div>
       <div className="mb-16">
@@ -141,7 +141,7 @@ const PrivacyPolicy = () => {
           considers you to be a good match with that user. Your Account,
           including pictures, might be displayed on the homepage of Goformeet
           for public viewing with your consent.
-        </p>  
+        </p>
       </div>
     </div>
   );
