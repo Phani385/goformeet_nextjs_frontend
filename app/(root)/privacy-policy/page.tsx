@@ -22,7 +22,7 @@ const PrivacyPolicy = () => {
           Why do we collect personal information?
         </h2>
         <p className="privacy-policy-para">
-          In this Privacy Policy, your "Personal Data" means information or
+          In this Privacy Policy, your &quot;Personal Data&quot; means information or
           pieces of information that could allow you to be identified. We
           process your personal data for us to be able to carry out our
           contractual commitments towards you. We use this information to assist
