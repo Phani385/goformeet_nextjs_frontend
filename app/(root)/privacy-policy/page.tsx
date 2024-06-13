@@ -270,7 +270,7 @@ const PrivacyPolicy = () => {
         <p className="privacy-policy-para">
           When registering, the Member expressly consents to his/her data being
           transmitted to Goformeet service providers and subcontractors outside
-          of the Member's country of residence, to let Goformeet run statistical
+          of the Member&apos;s country of residence, to let Goformeet run statistical
           studies, support users, and if need be, host data processed by the
           Application.
         </p>
@@ -322,7 +322,7 @@ const PrivacyPolicy = () => {
           available on our App and Website at all times. Please check the terms
           of use and privacy policy periodically for changes as all
           modifications are effective upon publication. Continued use of the
-          Goformeet app and website after revision indicates the user's
+          Goformeet app and website after revision indicates the user&apos;s
           acceptance of the terms of use and privacy policy.
         </p>
         <p className="privacy-policy-para">
