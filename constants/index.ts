@@ -37,6 +37,6 @@ export const footerLinks = [
     },
     {
         label: "Privacy Policy",
-        route: "/privacy"
+        route: "/privacy-policy"
     }
 ]

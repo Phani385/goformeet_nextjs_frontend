@@ -94,11 +94,11 @@ const Footer = () => {
           <div className="bg-white px-6 py-3 rounded-md flex gap-8 w-fit">
             <div className="border-r-2 flex-1 pr-8">
               <p className="text-[#B3BABF] ">SEND US A MESSAGE</p>
-              <p className="text-[#040C12] text-lg">info@goformeet.com</p>
+              <p className="text-[#040C12] text-lg">info@goformeet.co</p>
             </div>
             <div className="flex-1">
               <p className="text-[#B3BABF] ">CALL US</p>
-              <p className="text-[#040C12] text-lg">+91 123 456 7890</p>
+              <p className="text-[#040C12] text-lg">+91 888 425 5828</p>
             </div>
           </div>
         </div>

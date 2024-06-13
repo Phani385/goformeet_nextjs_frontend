@@ -169,3 +169,11 @@
   background-size: cover;
   @apply relative pb-20 flex flex-wrap justify-center items-start gap-8 px-4 md:px-6 lg:px-16 xl:pl-36 min-[1360px]:pl-24 min-[1360px]:pr-0 pt-80 lg:pt-60;
 }
+
+.privacy-policy-heading{
+  @apply font-bold text-2xl mb-3;
+}
+
+.privacy-policy-para{
+  @apply text-[#333] text-justify mb-2;
+}
