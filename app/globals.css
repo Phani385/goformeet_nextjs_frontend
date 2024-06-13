@@ -76,15 +76,15 @@
   @apply relative rounded-md w-64 h-[320px] overflow-hidden;
 }
 
-.slides-container{
+.slides-container {
   @apply flex transition-transform ease-out duration-500;
 }
 
-.carousel-buttons-container{
+.carousel-buttons-container {
   @apply absolute inset-0 flex top-60 items-center justify-center gap-4 p-4;
 }
 
-.carousel-button{
+.carousel-button {
   @apply p-1 rounded-full shadow bg-[#FCEBE650] text-white hover:bg-[#FCEBE6] hover:text-black;
 }
 
@@ -97,7 +97,7 @@
 }
 
 .host-name {
-  @apply text-2xl xl:text-3xl font-bold ;
+  @apply text-2xl xl:text-3xl font-bold;
 }
 
 .host-username {
@@ -108,7 +108,7 @@
   @apply font-normal text-xl xl:text-2xl;
 }
 
-.city-details{
+.city-details {
   @apply text-sm lg:text-base whitespace-nowrap;
 }
 
@@ -140,40 +140,41 @@
   @apply text-2xl mb-4 font-normal text-black;
 }
 
-.profile-bottom-section{
+.profile-bottom-section {
   @apply my-6;
-
 }
 
 .profile-text-card {
   @apply bg-[#fff] rounded-md py-1 px-2 text-[#A92600] text-center;
 }
 
-
-.profile-cards-container{
+.profile-cards-container {
   @apply flex flex-wrap gap-5;
 }
 
-
-.footer-bg{
+.footer-bg {
   @apply top-0 left-0 bg-white absolute w-full h-auto z-10;
 }
 
-
-.footer-social-link{
+.footer-social-link {
   @apply bg-[#E03300] text-white rounded-md p-2;
 }
 
-.footer{
-  background: url('/assets/images/footerBg.png') #fff;
+.footer {
+  background: url("/assets/images/footerBg.png") #fff;
   background-size: cover;
   @apply relative pb-20 flex flex-wrap justify-center items-start gap-8 px-4 md:px-6 lg:px-16 xl:pl-36 min-[1360px]:pl-24 min-[1360px]:pr-0 pt-80 lg:pt-60;
 }
 
-.privacy-policy-heading{
+.privacy-policy-heading {
   @apply font-bold text-2xl mb-3;
 }
 
-.privacy-policy-para{
+.privacy-policy-para {
   @apply text-[#333] text-justify mb-2;
+}
+
+.hero-bg {
+  background: linear-gradient(to bottom, #fff 60%, #fcebe6);
+  @apply custom-container mx-auto  h-[90vh] flex items-center justify-center gap-10;
 }
