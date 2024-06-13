@@ -55,8 +55,9 @@ async function Profile({ params }: Props) {
   async function getProfileData() {
     try {
       const response = await fetch(
-        `https://goformeet-backend.onrender.com/get-profile/${username}`
+        `${process.env.BACKEND_URL}/get-profile/${username}`
       );
+
       const data = await response.json();
       return data.profile;
     } catch (error) {
