@@ -73,10 +73,9 @@ const Footer = () => {
       </div>
       <ul>
         {footerLinks.map((link, index) => (
-          <li>
+          <li key={index}>
             <Link
               href={link.route}
-              key={index}
               className={`block mb-4 ${
                 pathname === link.route ? "text-black font-bold" : ""
               }`}
