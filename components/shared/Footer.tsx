@@ -12,7 +12,7 @@ const Footer = () => {
     <footer
       className="footer"
     >
-      <div className="w-1/4">
+      <div className="lg:w-1/4">
         <Image
           src="/assets/images/goformeetNavLogo.svg"
           alt="logo"
@@ -91,8 +91,8 @@ const Footer = () => {
             <h2 className="font-bold text-xl">How can we help?</h2>
             <p className="text-xl text-[#E03300] font-semibold">Contact us anytime.</p>
           </div>
-          <div className="bg-white px-6 py-3 rounded-md flex gap-8 w-fit">
-            <div className="border-r-2 flex-1 pr-8">
+          <div className="bg-white px-6 py-3 rounded-md flex flex-col lg:flex-row gap-8 w-full lg:w-fit ">
+            <div className="border-b-2 lg:border-b-0 pb-3 lg:pb-0 lg:border-r-2 flex-1 pr-8">
               <p className="text-[#B3BABF] ">SEND US A MESSAGE</p>
               <p className="text-[#040C12] text-lg">info@goformeet.co</p>
             </div>

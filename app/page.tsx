@@ -7,7 +7,7 @@ export default function Home() {
     <>
       <main className="custom-container mx-auto bg-[#FCEBE6] h-[90vh] flex items-center justify-center gap-10">
         <div className="flex-1">
-          <h1 className="text-5xl font-bold w-[80%] mb-4">
+          <h1 className="text-6xl font-bold w-[80%] mb-4">
             Guaranteed Meetings with{" "}
             <span className="text-[#E03401]">Industry Experts</span>
           </h1>

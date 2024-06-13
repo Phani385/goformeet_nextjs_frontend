@@ -31,7 +31,7 @@ export async function generateMetadata(
       openGraph: {
         images: [
           {
-            url: `https://goformeet-nextjs-frontend.vercel.app/api/og?name=${encodeURIComponent(
+            url: `${process.env.FRONTEND_URL}/api/og?name=${encodeURIComponent(
               profileData.personalDetails.name
             )}&username=${username}`,
             width: 1200,
