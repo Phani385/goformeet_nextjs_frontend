@@ -12,7 +12,7 @@ const Footer = () => {
     <footer
       className="footer"
     >
-      <div className="lg:w-1/4">
+      <div className="lg:w-1/4 pt-[480px] lg:pt-0">
         <Image
           src="/assets/images/goformeetNavLogo.svg"
           alt="logo"
