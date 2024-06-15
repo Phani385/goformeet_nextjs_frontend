@@ -175,6 +175,19 @@
 }
 
 .hero-bg {
-  background: linear-gradient(to bottom, #fff 60%, #fcebe6);
+  background: linear-gradient(to bottom, #fff, #fcebe6);
   @apply custom-container mx-auto  h-[90vh] flex items-center justify-center gap-10;
+}
+
+.landing-profiles {
+  background: linear-gradient(to bottom, #fcebe6, #fff);
+  @apply py-20 px-4 md:px-6 lg:px-16 xl:px-28;
+}
+
+.tab-trigger {
+  @apply bg-[#FCEBE6] mx-2  data-[state=active]:bg-gradient-to-r from-[#9D2604] to-[#191B23];
+}
+
+.profile-card {
+  @apply relative flex flex-col items-center rounded-md bg-gradient-to-br from-[#A92600] to-[#430F00] w-full md:w-[45%] lg:max-w-[230px] xl:max-w-[270px] p-4 pt-16;
 }

@@ -4,8 +4,11 @@ const nextConfig = {
     remotePatterns: [
       {
         hostname: "firebasestorage.googleapis.com",
-      }
-    ]
+      },
+      {
+        hostname: "goformeet.s3.ap-south-1.amazonaws.com",
+      },
+    ],
   },
 };
 

@@ -1,4 +1,5 @@
 import Footer from "@/components/shared/Footer";
+import LandingProfiles from "@/components/shared/LandingProfiles";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
@@ -54,7 +55,7 @@ export default function Home() {
           />
         </div>
       </main>
-      <div className="bg-[#fff] h-[400px]"></div>
+      <LandingProfiles />
     </>
   );
 }
