@@ -26,7 +26,7 @@ const LandingProfiles = () => {
             <TabsContent
               key={profile.profession}
               value={profile.profession.toLowerCase()}
-              className="flex gap-10 gap-y-20 flex-wrap"
+              className="flex gap-10 gap-y-20 flex-wrap data-[state=inactive]:mt-0 data-[state=active]:mt-0"
             >
               {profile.profiles.map((profile) => (
                 <LandingProfileCard key={profile.username} details={profile} />
