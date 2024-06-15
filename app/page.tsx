@@ -8,11 +8,11 @@ export default function Home() {
     <>
       <main className="hero-bg">
         <div className="flex-1">
-          <h1 className="text-6xl font-bold mb-4">
+          <h1 className="text-5xl xl:text-6xl min-[1440px]:text-7xl line font-bold mb-4">
             Guaranteed Meetings with{" "}
             <span className="text-[#E03401]">Industry Experts</span>
           </h1>
-          <p className="text-lg font-semibold w-[70%]">
+          <p className="text-lg font-semibold w-[70%] xl:text-xl min-[1440px]:text-2xl min-[1440px]:w-full">
             Book and secure your meetings with top professionals effortlessly.
           </p>
           <div className="flex gap-4 my-4">
@@ -52,6 +52,7 @@ export default function Home() {
             width={400}
             height={400}
             alt="Hero Image"
+            className="xl:w-full"
           />
         </div>
       </main>
