@@ -8,7 +8,7 @@ export default function Home() {
     <>
       <main className="hero-bg">
         <div className="flex-1">
-          <h1 className="text-5xl xl:text-6xl min-[1440px]:text-7xl line font-bold mb-4">
+          <h1 className="text-5xl xl:text-6xl min-[1440px]:text-7xl min-[1440px]:leading-[84px] line font-bold mb-4">
             Guaranteed Meetings with{" "}
             <span className="text-[#E03401]">Industry Experts</span>
           </h1>
@@ -52,7 +52,7 @@ export default function Home() {
             width={400}
             height={400}
             alt="Hero Image"
-            className="xl:w-full"
+            className="xl:w-[80%]"
           />
         </div>
       </main>
