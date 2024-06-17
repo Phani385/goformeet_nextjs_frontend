@@ -145,7 +145,7 @@
 }
 
 .profile-text-card {
-  @apply bg-[#fff] rounded-md py-1 px-2 text-[#A92600] text-center;
+  @apply bg-[#FCEBE6] rounded-md py-1 px-2 text-[#A92600] text-center;
 }
 
 .profile-cards-container {
