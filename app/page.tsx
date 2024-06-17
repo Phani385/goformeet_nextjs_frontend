@@ -1,5 +1,7 @@
+import EarnWithGoformeet from "@/components/shared/EarnWithGoformeet";
 import Footer from "@/components/shared/Footer";
 import LandingProfiles from "@/components/shared/LandingProfiles";
+import WhyChooseGoformeet from "@/components/shared/WhyChooseGoformeet";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
@@ -57,6 +59,8 @@ export default function Home() {
         </div>
       </main>
       <LandingProfiles />
+      <EarnWithGoformeet />
+      <WhyChooseGoformeet />
     </>
   );
 }

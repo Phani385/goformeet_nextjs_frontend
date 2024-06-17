@@ -244,3 +244,26 @@ export const LandingPageProfiles = [
     ],
   },
 ];
+
+export const whyChooseGoformeet = [
+  {
+    title: "Guaranteed Meetings",
+    description: "No more no-shows or last-minute cancellations..",
+    icon: "/assets/icons/guranteedMeetings.svg",
+  },
+  {
+    title: "Top Professionals",
+    description: "Access to industry experts and thought leaders.",
+    icon: "/assets/icons/topProfessionals.svg",
+  },
+  {
+    title: "Easy Scheduling",
+    description: "Simple and intuitive booking process.",
+    icon: "/assets/icons/easyScheduling.svg",
+  },
+  {
+    title: "Secure and Confidential",
+    description: "Your information is safe with us.",
+    icon: "/assets/icons/secureAndConfidential.svg",
+  },
+];
