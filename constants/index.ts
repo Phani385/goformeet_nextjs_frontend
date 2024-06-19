@@ -272,11 +272,11 @@ export const EarnWithUsCards = [
   {
     title: "Endless Earning Opportunity",
     icon: "/assets/icons/creatorEarnings.svg",
-    className: "mb-16",
+    className: "mb-16 mt-19",
   },
   {
     title: "Community of 2k+ Hosts",
     icon: "/assets/icons/community.svg",
-    className: "mt-16",
+    className:"",
   },
 ];
