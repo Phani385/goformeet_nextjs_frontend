@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import type { Metadata } from "next";
 import DownloadAppModal from "@/components/shared/DownloadAppModal";
+import FAQSection from "@/components/shared/FAQSection";
 
 export const metadata: Metadata = {
   title:
@@ -70,6 +71,7 @@ export default function Home() {
       <LandingProfiles />
       <EarnWithGoformeet />
       <WhyChooseGoformeet />
+      <FAQSection />
     </>
   );
 }

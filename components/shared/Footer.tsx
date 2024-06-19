@@ -9,9 +9,7 @@ import React from "react";
 const Footer = () => {
   const pathname = usePathname();
   return (
-    <footer
-      className="footer"
-    >
+    <footer className="footer">
       <div className="lg:w-1/4 pt-[480px] lg:pt-0">
         <Image
           src="/assets/images/goformeetNavLogo.svg"
@@ -24,7 +22,7 @@ const Footer = () => {
           with top professionals across various industries.
         </p>
         <div className="flex gap-3 mt-3">
-          <Link href="/">
+          <Link href="https://www.facebook.com/goformeet" target="_blank">
             <Image
               src="/assets/icons/facebook.svg"
               alt="Facebook"
@@ -33,7 +31,7 @@ const Footer = () => {
               height={26}
             />
           </Link>
-          <Link href="/">
+          {/* <Link href="/">
             <Image
               src="/assets/icons/twitter.svg"
               alt="Twitter"
@@ -41,8 +39,8 @@ const Footer = () => {
               width={30}
               height={30}
             />
-          </Link>
-          <Link href="/">
+          </Link> */}
+          <Link href="https://www.instagram.com/goformeet/" target="_blank">
             <Image
               src="/assets/icons/instagram.svg"
               alt="Instagram"
@@ -51,7 +49,10 @@ const Footer = () => {
               height={30}
             />
           </Link>
-          <Link href="/">
+          <Link
+            href="https://www.linkedin.com/company/goformeet"
+            target="_blank"
+          >
             <Image
               src="/assets/icons/linkedin.svg"
               alt="Linkedin"
@@ -60,7 +61,7 @@ const Footer = () => {
               height={30}
             />
           </Link>
-          <Link href="/">
+          <Link href="https://www.youtube.com/@goformeet" target="_blank">
             <Image
               src="/assets/icons/youtube.svg"
               alt="Youtube"
@@ -89,7 +90,9 @@ const Footer = () => {
         <div className="flex flex-wrap lg:flex-row gap-4 lg:items-center">
           <div>
             <h2 className="font-bold text-xl">How can we help?</h2>
-            <p className="text-xl text-[#E03300] font-semibold">Contact us anytime.</p>
+            <p className="text-xl text-[#E03300] font-semibold">
+              Contact us anytime.
+            </p>
           </div>
           <div className="bg-white px-6 py-3 rounded-md flex flex-col lg:flex-row gap-8 w-full lg:w-fit ">
             <div className="border-b-2 lg:border-b-0 pb-3 lg:pb-0 lg:border-r-2 flex-1 pr-8">
@@ -103,7 +106,12 @@ const Footer = () => {
           </div>
         </div>
         <div className="mx-auto mt-10 lg:pl-16">
-        <Image src="/assets/images/goformeetFooter.svg" alt="Footer Image" width={450} height={200} />
+          <Image
+            src="/assets/images/goformeetFooter.svg"
+            alt="Footer Image"
+            width={450}
+            height={200}
+          />
         </div>
       </div>
     </footer>
