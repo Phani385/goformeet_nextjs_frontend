@@ -267,3 +267,16 @@ export const whyChooseGoformeet = [
     icon: "/assets/icons/secureAndConfidential.svg",
   },
 ];
+
+export const EarnWithUsCards = [
+  {
+    title: "Endless Earning Opportunity",
+    icon: "/assets/icons/creatorEarnings.svg",
+    className: "mb-16",
+  },
+  {
+    title: "Community of 2k+ Hosts",
+    icon: "/assets/icons/community.svg",
+    className: "mt-16",
+  },
+];
