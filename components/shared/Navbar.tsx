@@ -31,7 +31,7 @@ const Navbar = () => {
         </li>
         <li>
           <DownloadAppModal>
-            <Button className="sign-in-button">Sign In</Button>
+            <Button className="sign-in-button">Sign Up</Button>
           </DownloadAppModal>
         </li>
       </ul>
