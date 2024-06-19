@@ -6,6 +6,7 @@ import { Metadata, ResolvingMetadata } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 type Props = {
   params: { username: string };
@@ -58,7 +59,6 @@ async function Profile({ params }: Props) {
         `${process.env.BACKEND_URL}/get-profile/${username}`
       );
       const data = await response.json();
-      console.log(data);
       return data.profile;
     } catch (error) {
       console.error(error);
@@ -95,7 +95,17 @@ async function Profile({ params }: Props) {
           </div>
           <div>
             <div className="flex justify-end">
-              <DownloadAppModal />
+              <DownloadAppModal>
+                <Button className="secondary-button gap-2 items-center">
+                  Book Meeting{" "}
+                  <Image
+                    alt="Right Arrow"
+                    src="/assets/icons/rightArrow.svg"
+                    width={16}
+                    height={16}
+                  />
+                </Button>
+              </DownloadAppModal>
             </div>
             <h4 className="city-details">
               📍{profileData.personalDetails.city} - City in{" "}

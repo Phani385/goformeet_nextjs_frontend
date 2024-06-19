@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { Button } from "../ui/button";
+import DownloadAppModal from "./DownloadAppModal";
 
 const LandingProfileCard = ({
   details,
@@ -31,16 +32,20 @@ const LandingProfileCard = ({
         <p className="text-[#F5BFB0] mb-4">
           {details.username},{details.location}
         </p>
-        <p className="text-[#F5BFB0] mb-8 text-ellipsis line-clamp-2">{details.description}</p>
-        <Button className="secondary-button gap-2 items-center w-full">
-          Book Meeting
-          <Image
-            alt="Right Arrow"
-            src="/assets/icons/rightArrow.svg"
-            width={16}
-            height={16}
-          />
-        </Button>
+        <p className="text-[#F5BFB0] mb-8 text-ellipsis line-clamp-2">
+          {details.description}
+        </p>
+        <DownloadAppModal>
+          <Button className="secondary-button gap-2 items-center w-full">
+            Book Meeting
+            <Image
+              alt="Right Arrow"
+              src="/assets/icons/rightArrow.svg"
+              width={16}
+              height={16}
+            />
+          </Button>
+        </DownloadAppModal>
       </div>
     </div>
   );

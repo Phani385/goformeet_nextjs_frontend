@@ -4,6 +4,17 @@ import LandingProfiles from "@/components/shared/LandingProfiles";
 import WhyChooseGoformeet from "@/components/shared/WhyChooseGoformeet";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import type { Metadata } from "next";
+import DownloadAppModal from "@/components/shared/DownloadAppModal";
+
+export const metadata: Metadata = {
+  title:
+    "Goformeet | Meet, Earn, Connect | Unlock endless solutions with just one app",
+  description:
+    "Goformeet your go-to app for hassle-free meetings. Book people of your choice vibe and embrace your connection with them",
+  keywords:
+    "goformeet, GoForMeet, go for meet, Go For Meet, Go4meet, meeting aap, Professional, Meeting, face to face timing, Earn money, Make money online, Looking for New opportunity, freelance, jobs, doctor freelance, model, freelance jobs for models, freelance jobs for trainers, freelance jobs for travel assistance, freelance jobs for personal assistance, freelance jobs for life coach, freelance jobs for companion, freelance jobs for actor, freelance jobs for students, freelance jobs for , freelance jobs for air hostes, freelance jobs for Atrologer, freelance jobs for artist, freelance jobs for fashion designer, freelance jobs for nurse, freelance jobs for recruiter, freelance jobs for fitness trainer, freelance jobs for analyst, freelance jobs for lawyer, freelance jobs for musician, freelance jobs photographer, Go for meet, Gofor meet, go formeet, go4meet, go 4 meet,go4 meet,go 4meet",
+};
 
 export default function Home() {
   return (
@@ -18,34 +29,32 @@ export default function Home() {
             Book and secure your meetings with top professionals effortlessly.
           </p>
           <div className="flex gap-4 my-4">
-            <Button
-              variant="outline"
-              style={{
-                borderWidth: 2,
-                borderStyle: "solid",
-                borderImage:
-                  "linear-gradient(to bottom, red, rgba(0, 0, 0, 0)) 1 100%",
-                borderImageSlice: "50px 50px 50px 50px",
-              }}
-            >
-              Start My Page
-              <Image
-                alt="Right Arrow"
-                src="/assets/icons/rightArrow.svg"
-                width={16}
-                height={16}
-              />
-            </Button>
-
-            <Button className="secondary-button gap-2 items-center">
-              Book Meeting
-              <Image
-                alt="Right Arrow"
-                src="/assets/icons/rightArrow.svg"
-                width={16}
-                height={16}
-              />
-            </Button>
+            <DownloadAppModal>
+              <div className="border-gradient mb-5">
+                <Button variant="outline" className="flex gap-1">
+                  Start My Page
+                  <Image
+                    alt="Right Arrow"
+                    className="mt-1"
+                    src="/assets/icons/rightArrow.svg"
+                    width={16}
+                    height={16}
+                  />
+                </Button>
+              </div>
+            </DownloadAppModal>
+            <DownloadAppModal>
+              <Button className="sign-in-button gap-1 items-center justify-center">
+                Book Meeting
+                <Image
+                  alt="Right Arrow"
+                  src="/assets/icons/arrowRight.svg"
+                  className="mt-1"
+                  width={12}
+                  height={12}
+                />
+              </Button>
+            </DownloadAppModal>
           </div>
         </div>
         <div className="flex-1 flex justify-end">
@@ -59,6 +68,7 @@ export default function Home() {
         </div>
       </main>
       <LandingProfiles />
+      {/* <EarnWithGoformeet /> */}
       <WhyChooseGoformeet />
     </>
   );
