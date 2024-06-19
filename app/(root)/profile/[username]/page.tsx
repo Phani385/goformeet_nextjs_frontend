@@ -29,6 +29,12 @@ export async function generateMetadata(
     const profileData = profile.profile;
 
     return {
+      title:
+        "Goformeet | Meet, Earn, Connect | Unlock endless solutions with just one app",
+      description:
+        "Goformeet your go-to app for hassle-free meetings. Book people of your choice vibe and embrace your connection with them",
+      keywords:
+        "goformeet, GoForMeet, go for meet, Go For Meet, Go4meet, meeting aap, Professional, Meeting, face to face timing, Earn money, Make money online, Looking for New opportunity, freelance, jobs, doctor freelance, model, freelance jobs for models, freelance jobs for trainers, freelance jobs for travel assistance, freelance jobs for personal assistance, freelance jobs for life coach, freelance jobs for companion, freelance jobs for actor, freelance jobs for students, freelance jobs for , freelance jobs for air hostes, freelance jobs for Atrologer, freelance jobs for artist, freelance jobs for fashion designer, freelance jobs for nurse, freelance jobs for recruiter, freelance jobs for fitness trainer, freelance jobs for analyst, freelance jobs for lawyer, freelance jobs for musician, freelance jobs photographer, Go for meet, Gofor meet, go formeet, go4meet, go 4 meet,go4 meet,go 4meet",
       openGraph: {
         images: [
           {
