@@ -10,18 +10,18 @@ import {
 
 const UserReviews = () => {
   return (
-    <div className="custom-container bg-[#F9DCD4] py-16">
+    <div className="custom-container bg-[#F9DCD4] h-screen flex items-center py-16">
       <Carousel>
         <CarouselContent>
           <CarouselItem>
             <div className="flex items-center gap-10">
               <div className="relative">
                 <div className="absolute rounded-md bg-[#F6BFB0] h-full ml-[10%] z-[2] w-4/5"></div>
-                <div className="relative bg-[#E03300] p-5 my-10 z-[5]">
+                <div className="relative bg-[#E03300] p-5 my-16 z-[5]">
                   <Image
                     src="/assets/images/userReview.jpeg"
                     alt="User Image"
-                    width={200}
+                    width={300}
                     height={400}
                   />
                   <h2 className="text-lg text-white text-center mt-5 font-bold">
