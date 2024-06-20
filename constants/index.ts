@@ -280,3 +280,27 @@ export const EarnWithUsCards = [
     className:"",
   },
 ];
+
+
+export const FAQQuestions = [
+  {
+    id: "question-1",
+    question: "How does #Goformeet guarantee that my meetings will happen?",
+    answer: "Yes. It adheres to the WAI-ARIA design pattern.",
+  },
+  {
+    id: "question-2",
+    question: "What types of professionals can I book meetings with on #Goformeet?",
+    answer: "Yes. It adheres to the WAI-ARIA design pattern.",
+  },
+  {
+    id: "question-3",
+    question: "How do I schedule a meeting on #Goformeet?",
+    answer: "Yes. It adheres to the WAI-ARIA design pattern.",
+  },
+  {
+    id: "question-4",
+    question: "What happens if I need to reschedule or cancel a meeting?",
+    answer: "Yes. It adheres to the WAI-ARIA design pattern.",
+  },
+];
