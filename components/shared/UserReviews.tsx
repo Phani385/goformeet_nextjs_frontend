@@ -17,7 +17,7 @@ const UserReviews = () => {
             <div className="flex items-center gap-10">
               <div className="relative">
                 <div className="absolute rounded-md bg-[#F6BFB0] h-full ml-[10%] z-[2] w-4/5"></div>
-                <div className="relative bg-[#E03300] p-5 my-16 z-[5]">
+                <div className="relative bg-[#E03300] p-5 my-12 z-[5]">
                   <Image
                     src="/assets/images/userReview.jpeg"
                     alt="User Image"
@@ -30,7 +30,7 @@ const UserReviews = () => {
                   <p className="text-white text-center">Actress</p>
                 </div>
               </div>
-              <div className="w-1/2 mx-auto h-fit">
+              <div className="flex-1 mx-auto h-fit">
                 <h2 className="font-bold mb-8 text-2xl text-center lg:text-3xl xl:text-4xl">
                   What Our <span className="text-[#E03300]">Users</span> Say
                 </h2>
