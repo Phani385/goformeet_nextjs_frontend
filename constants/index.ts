@@ -277,30 +277,39 @@ export const EarnWithUsCards = [
   {
     title: "Community of 2k+ Hosts",
     icon: "/assets/icons/community.svg",
-    className:"",
+    className: "",
   },
 ];
-
 
 export const FAQQuestions = [
   {
     id: "question-1",
-    question: "How does #Goformeet guarantee that my meetings will happen?",
-    answer: "Yes. It adheres to the WAI-ARIA design pattern.",
+    question: "01  Is Goformeet free to use?",
+    answer:
+      " Yes, Goformeet is free to download and use. You have to pay for the meetings you schedule ",
   },
   {
     id: "question-2",
-    question: "What types of professionals can I book meetings with on #Goformeet?",
-    answer: "Yes. It adheres to the WAI-ARIA design pattern.",
+    question: "02 Can I use Goformeet to schedule professional meetings?",
+    answer:
+      " Absolutely! Goformeet is perfect for both personal and professional use, allowing you to schedule meetings with anyone with whom you can vibe .",
   },
   {
     id: "question-3",
-    question: "How do I schedule a meeting on #Goformeet?",
-    answer: "Yes. It adheres to the WAI-ARIA design pattern.",
+    question: "03 How does Goformeet prioritize safety and privacy?",
+    answer:
+      "Safety and privacy are paramount at Goformeet. We employ robust security measures to protect user data and ensure a safe and enjoyable experience for all.",
   },
   {
     id: "question-4",
-    question: "What happens if I need to reschedule or cancel a meeting?",
-    answer: "Yes. It adheres to the WAI-ARIA design pattern.",
+    question: "04 Are there age restrictions for using Goformeet?",
+    answer:
+      "Users must be at least 18 years old to create an account on Goformeet.",
+  },
+  {
+    id: "question-5",
+    question: "05 Can I suggest new features or improvements for Goformeet?",
+    answer:
+      "We love hearing from our users! If you have any suggestions or feedback, please don't hesitate to reach out to us",
   },
 ];
