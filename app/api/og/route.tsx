@@ -26,7 +26,7 @@ export async function GET(request: Request) {
     console.log(username);
 
     const imageUrl = `https://goformeet.s3.ap-south-1.amazonaws.com/${username}/${username}_1.png`;
-    console.log(imageUrl)
+    console.log(imageUrl);
 
     return new ImageResponse(
       (
@@ -55,7 +55,7 @@ export async function GET(request: Request) {
             alt="og-image"
             tw="w-[329px] h-[472px] absolute top-20 left-21 rounded-lg"
           />
-          <h4 tw="pt-30 pl-20 text-normal">{`goformeet.co/${username}`}</h4>
+          <h4 tw="pt-30 absolute left-[465px] text-normal">{`goformeet.co/${username}`}</h4>
         </div>
       ),
       {
