@@ -9,7 +9,7 @@ import { FAQQuestions } from "@/constants";
 
 const FAQSection = () => {
   return (
-    <div className="custom-container my-10">
+    <div className="custom-container my-20 h-screen">
       <h2 className="font-bold text-center mb-14 text-3xl lg:text-4xl xl:text-5xl">
         <span className="text-[#E03300]">Frequently</span> Asked Questions
       </h2>

@@ -133,7 +133,7 @@
 }
 
 .profile-bottom-right {
-  @apply p-4 px-10;
+  @apply pl-4 ;
 }
 
 .profile-bottom-heading {

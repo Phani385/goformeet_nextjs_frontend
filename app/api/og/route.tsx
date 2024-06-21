@@ -25,6 +25,7 @@ export async function GET(request: Request) {
     const username = hasUsername ? searchParams.get("username") : "username";
 
     const imageUrl = `https://goformeet.s3.ap-south-1.amazonaws.com/${username}/${username}_1.png`;
+    
 
     return new ImageResponse(
       (

@@ -10,14 +10,17 @@ import {
 
 const UserReviews = () => {
   return (
-    <div className="custom-container bg-[#F9DCD4] h-screen flex items-center py-16">
-      <Carousel>
+    <div className="custom-container bg-[#F9DCD4] h-screen flex flex-col lg:flex-row items-center py-16">
+      <h2 className="font-bold mb-2 text-2xl text-center lg:hidden">
+        What Our <span className="text-[#E03300]">Users</span> Say
+      </h2>
+      <Carousel className="w-full">
         <CarouselContent>
           <CarouselItem>
-            <div className="flex items-center gap-10">
+            <div className="lg:flex items-center gap-10">
               <div className="relative">
-                <div className="absolute rounded-md bg-[#F6BFB0] h-full ml-[10%] z-[2] w-4/5"></div>
-                <div className="relative bg-[#E03300] p-5 my-12 z-[5]">
+                <div className="absolute w-fit rounded-md bg-[#F6BFB0] h-full ml-[10%] z-[2] lg:w-4/5 hidden lg:block"></div>
+                <div className="relative bg-[#E03300] w-fit mx-auto order-2 p-5 lg:my-12 z-[5]">
                   <Image
                     src="/assets/images/userReview.jpeg"
                     alt="User Image"
@@ -31,10 +34,10 @@ const UserReviews = () => {
                 </div>
               </div>
               <div className="flex-1 mx-auto h-fit">
-                <h2 className="font-bold mb-8 text-2xl text-center lg:text-3xl xl:text-4xl">
+                <h2 className="font-bold mb-8 hidden lg:block text-center lg:text-3xl xl:text-4xl">
                   What Our <span className="text-[#E03300]">Users</span> Say
                 </h2>
-                <p className="text-justify mt-4">
+                <p className="text-justify mt-4 w-[90%] lg:w-full">
                   As an actress, my schedule is always packed with auditions,
                   rehearsals, and meetings with directors and producers.
                   #Goformeet has been a game-changer for managing my busy
@@ -78,7 +81,7 @@ const UserReviews = () => {
             </div>
           </CarouselItem>
           <CarouselItem>
-            <div className="flex items-center gap-10">
+            <div className="flex items-center gap-10    ">
               <div className="relative">
                 <div className="absolute rounded-md bg-[#F6BFB0] h-full ml-[10%] z-[2] w-4/5"></div>
                 <div className="relative bg-[#E03300] p-5 my-10 z-[5]">
@@ -116,5 +119,4 @@ const UserReviews = () => {
     </div>
   );
 };
-
 export default UserReviews;

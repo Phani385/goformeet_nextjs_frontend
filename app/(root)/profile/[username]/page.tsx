@@ -157,7 +157,7 @@ async function Profile({ params }: Props) {
         </div>
       </div>
       <div className="custom-container profile-bottom-container">
-        <div className="mt-48 w-64 text-justify text-sm">
+        <div className="mt-48 min-w-64 text-justify text-sm">
           <p>{profileData.personalDetails.aboutMe}</p>
           <div className="separation-line"></div>
         </div>
@@ -182,7 +182,7 @@ async function Profile({ params }: Props) {
               </ul>
             </section>
           )}
-          {profileData.personalDetails.languages && (
+          {profileData.personalDetails.languages.length !== 0 && (
             <section className="profile-bottom-section">
               <h2 className="profile-bottom-heading">My Languages</h2>
               <ul className="profile-cards-container">

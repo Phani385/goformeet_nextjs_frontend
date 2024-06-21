@@ -313,3 +313,14 @@ export const FAQQuestions = [
       "We love hearing from our users! If you have any suggestions or feedback, please don't hesitate to reach out to us",
   },
 ];
+
+
+export const UserReviews = [
+  {
+    imageUrl: "/assets/images/userReview.jpeg",
+    name: "Sophie Jain",
+    profession: "Actress",
+    review:
+      "As an actress, my schedule is always packed with auditions, rehearsals, and meetings with directors and producers. #Goformeet has been a game-changer for managing my busy calendar. Thanks to #Goformeet, I can focus more on my craft and less on logistical headaches. I highly recommend it to anyone in the entertainment industry!",
+  },
+]
