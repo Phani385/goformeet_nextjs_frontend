@@ -28,6 +28,12 @@ export async function generateMetadata(
     const profile = await profileResponse.json();
     const profileData = profile.profile;
 
+    console.log(
+      `${process.env.FRONTEND_URL}/api/og?name=${encodeURIComponent(
+        profileData.personalDetails.name.trim()
+      )}&username=${username}`
+    );
+
     return {
       title:
         "Goformeet | Meet, Earn, Connect | Unlock endless solutions with just one app",
@@ -39,7 +45,7 @@ export async function generateMetadata(
         images: [
           {
             url: `${process.env.FRONTEND_URL}/api/og?name=${encodeURIComponent(
-              profileData.personalDetails.name
+              profileData.personalDetails.name.trim()
             )}&username=${username}`,
             width: 1200,
             height: 630,
