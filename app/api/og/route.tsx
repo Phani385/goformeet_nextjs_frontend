@@ -4,7 +4,7 @@ import { ImageResponse } from "next/og";
 // App router includes @vercel/og.
 // No need to install it.
 
-export const runtime = "experimental-edge";
+export const runtime = "edge";
 
 const arimoRegularFontP = fetch(
   new URL("../../../public/assets/Arimo-Regular.ttf", import.meta.url)
@@ -55,7 +55,7 @@ export async function GET(request: Request) {
             alt="og-image"
             tw="w-[329px] h-[472px] absolute top-20 left-21 rounded-lg"
           />
-          <h4 tw="pt-30 absolute left-[465px] text-normal">{`goformeet.co/${username}`}</h4>
+          <h4 tw="pt-30 absolute left-[465px] mt-2">{`goformeet.co/${username}`}</h4>
         </div>
       ),
       {
