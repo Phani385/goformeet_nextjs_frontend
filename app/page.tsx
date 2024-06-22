@@ -71,7 +71,7 @@ export default function Home() {
       </main>
       <LandingProfiles />
       <div className="my-28 custom-container">
-        <h2 className="text-3xl lg:text-4xl mb-8 font-bold text-center">
+        <h2 className="text-3xl lg:text-4xl mb-12 font-bold text-center">
           We have been <span className="text-[#E03300]">Featured on</span>
         </h2>
         <div className="flex justify-between">
