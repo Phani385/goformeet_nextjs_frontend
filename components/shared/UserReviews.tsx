@@ -14,10 +14,10 @@ const UserReviews = () => {
       <h2 className="font-bold mb-2 text-2xl text-center lg:hidden">
         What Our <span className="text-[#E03300]">Users</span> Say
       </h2>
-      <Carousel className="w-full px-14">
+      <Carousel className="w-full px-24">
         <CarouselContent>
           <CarouselItem>
-            <div className="lg:flex items-center gap-14">
+            <div className="lg:flex items-center gap-20">
               <div className="relative">
                 <div className="absolute w-fit rounded-md bg-[#F6BFB0] h-full ml-[10%] z-[2] lg:w-4/5 hidden lg:block"></div>
                 <div className="relative bg-[#E03300] w-fit mx-auto order-2 p-5 lg:my-12 z-[5]">
@@ -37,7 +37,7 @@ const UserReviews = () => {
                 <h2 className="font-bold mb-8 hidden lg:block text-center lg:text-3xl xl:text-4xl">
                   What Our <span className="text-[#E03300]">Users</span> Say
                 </h2>
-                <p className="text-justify mt-4 w-full mx-auto lg:w-[80%]">
+                <p className="text-justify mt-4 w-full mx-auto">
                   As an actress, my schedule is always packed with auditions,
                   rehearsals, and meetings with directors and producers.
                   #Goformeet has been a game-changer for managing my busy
