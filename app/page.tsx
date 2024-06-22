@@ -71,10 +71,10 @@ export default function Home() {
       </main>
       <LandingProfiles />
       <div className="my-28 custom-container">
-        <h2 className="text-3xl lg:text-4xl mb-12 font-bold text-center">
+        <h2 className="text-3xl lg:text-4xl xl:text-5xl text-center mb-8 font-bold">
           We have been <span className="text-[#E03300]">Featured on</span>
         </h2>
-        <div className="flex justify-between">
+        <div className="flex justify-around">
           <Image src="/assets/images/dailyhunt.png" width={200} height={200} alt="Dailyhunt" />
           <Image src="/assets/images/medium.png" width={200} height={200} alt="Dailyhunt" />
           <Image src="/assets/images/gnews.png" width={200} height={200} alt="Dailyhunt" />
