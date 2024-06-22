@@ -10,10 +10,15 @@ import { FAQQuestions } from "@/constants";
 const FAQSection = () => {
   return (
     <div className="custom-container my-20 h-screen flex flex-col justify-center">
-      <h2 className="font-bold text-center mb-14 text-3xl lg:text-4xl xl:text-5xl">
-        <span className="text-[#E03300]">Frequently</span> Asked Questions
-      </h2>
-
+      <div>
+        <h2 className="font-bold text-center mb-4 text-3xl lg:text-4xl xl:text-5xl">
+          <span className="text-[#E03300]">Frequently</span> Asked Questions
+        </h2>
+        <p className="mb-14 text-lg w-[80%] text-center mx-auto">
+          Goformeet makes scheduling meetings effortless, fitting your comfort
+          and time frame. Even if you're swamped, Goformeet's got your back!
+        </p>
+      </div>
       <Accordion className="w-3/4 mx-auto" type="single" collapsible>
         {FAQQuestions.map((question) => (
           <AccordionItem key={question.id} value={question.id}>
