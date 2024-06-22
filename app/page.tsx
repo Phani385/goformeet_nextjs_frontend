@@ -70,6 +70,17 @@ export default function Home() {
         </div>
       </main>
       <LandingProfiles />
+      <div className="my-28 custom-container">
+        <h2 className="text-3xl lg:text-4xl mb-8 font-bold text-center">
+          We have been <span className="text-[#E03300]">Featured on</span>
+        </h2>
+        <div className="flex justify-between">
+          <Image src="/assets/images/dailyhunt.png" width={200} height={200} alt="Dailyhunt" />
+          <Image src="/assets/images/medium.png" width={200} height={200} alt="Dailyhunt" />
+          <Image src="/assets/images/gnews.png" width={200} height={200} alt="Dailyhunt" />
+          <Image src="/assets/images/quara.png" width={200} height={200} alt="Dailyhunt" />
+        </div>
+      </div>
       <EarnWithGoformeet />
       <WhyChooseGoformeet />
       <UserReviews />

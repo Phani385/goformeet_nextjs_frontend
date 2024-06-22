@@ -16,7 +16,7 @@ const FAQSection = () => {
         </h2>
         <p className="mb-14 text-lg w-[80%] text-center mx-auto">
           Goformeet makes scheduling meetings effortless, fitting your comfort
-          and time frame. Even if you're swamped, Goformeet&apos;s got your back!
+          and time frame. Even if you&apos;re swamped, Goformeet&apos;s got your back!
         </p>
       </div>
       <Accordion className="w-3/4 mx-auto" type="single" collapsible>
