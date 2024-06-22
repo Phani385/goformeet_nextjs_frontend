@@ -9,7 +9,7 @@ import { FAQQuestions } from "@/constants";
 
 const FAQSection = () => {
   return (
-    <div className="custom-container my-20 h-screen flex flex-col justify-center">
+    <div className="custom-container py-20 h-screen flex flex-col justify-center architecture-journey">
       <div>
         <h2 className="font-bold text-center mb-4 text-3xl lg:text-4xl xl:text-5xl">
           <span className="text-[#E03300]">Frequently</span> Asked Questions

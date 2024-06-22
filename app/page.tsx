@@ -8,6 +8,7 @@ import type { Metadata } from "next";
 import DownloadAppModal from "@/components/shared/DownloadAppModal";
 import FAQSection from "@/components/shared/FAQSection";
 import UserReviews from "@/components/shared/UserReviews";
+import ArchitecturalJourney from "@/components/shared/ArchitecturalJourney";
 
 export const metadata: Metadata = {
   title:
@@ -83,6 +84,7 @@ export default function Home() {
       </div>
       <EarnWithGoformeet />
       <WhyChooseGoformeet />
+      <ArchitecturalJourney />
       <UserReviews />
       <FAQSection />
     </>
