@@ -15,7 +15,7 @@ const ArchitecturalJourney = () => {
         <p className="w-full lg:w-[80%]">
           At #Goformeet, our journey began with a vision to revolutionize
           professional networking by ensuring reliable and seamless meeting
-          experiences. Over the years, we've evolved through innovation, user
+          experiences. Over the years, we&apos;ve evolved through innovation, user
           feedback, and a commitment to excellence. Our platform is built on
           cutting-edge technology, ensuring security, efficiency, and ease of
           use for all users.
