@@ -14,7 +14,7 @@ const UserReviews = () => {
       <h2 className="font-bold mb-2 text-2xl text-center lg:hidden">
         What Our <span className="text-[#E03300]">Users</span> Say
       </h2>
-      <Carousel className="w-full">
+      <Carousel className="w-full px-10">
         <CarouselContent>
           <CarouselItem>
             <div className="lg:flex items-center gap-10">
