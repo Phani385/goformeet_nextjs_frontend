@@ -5,7 +5,7 @@ import { ArchitectureJourneyCards } from "@/constants";
 
 const ArchitecturalJourney = () => {
   return (
-    <div className="custom-container py-20 flex architecture-journey">
+    <div className="custom-container py-20 flex items-center architecture-journey">
       <div className="flex-1 py-10">
         <h2 className="text-2xl lg:text-3xl xl:text-4xl mb-8 font-bold">
           MEET, CONNECT AND{" "}
@@ -27,10 +27,11 @@ const ArchitecturalJourney = () => {
           ))}
         </div>
       </div>
-      <div className="h-full">
+      <div className="lg:w-[35%] xl:w-[45%] h-full">
         <Image
           alt="Architectural journey"
           src="/assets/images/architectureJounrey.png"
+          className="w-full"
           width={400}
           height={200}
         />
