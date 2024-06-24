@@ -8,27 +8,23 @@ const ArchitecturalJourney = () => {
     <div className="custom-container py-20 flex architecture-journey">
       <div className="flex-1 py-10">
         <h2 className="text-2xl lg:text-3xl xl:text-4xl mb-8 font-bold">
-          Our Architectural{" "}
+          MEET, CONNECT AND{" "}
           <span className="text-[#E03300]">
             {" "}
-            <br /> Journey
+            <br /> EARN
           </span>
         </h2>
         <p className="w-full lg:w-[80%]">
-          At #Goformeet, our journey began with a vision to revolutionize
-          professional networking by ensuring reliable and seamless meeting
-          experiences. Over the years, we&apos;ve evolved through innovation, user
-          feedback, and a commitment to excellence. Our platform is built on
-          cutting-edge technology, ensuring security, efficiency, and ease of
-          use for all users.
+          Goformeet isn&apos;t just a meeting app; it&apos;s your gateway to new
+          experiences, connections, and opportunities. Whether you&apos;re expanding
+          your social circle, growing your professional network, or just having
+          fun, Goformeet has it all. With offline meetings, a diverse user
+          base, and exciting.
         </p>
         <div className="lg:flex flex-wrap">
-          {
-            ArchitectureJourneyCards.map((card, index) => (
-              <ArchitecturalJourneyCard key={index} content={card} />
-            ))
-
-          }
+          {ArchitectureJourneyCards.map((card, index) => (
+            <ArchitecturalJourneyCard key={index} content={card} />
+          ))}
         </div>
       </div>
       <div>

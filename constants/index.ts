@@ -326,27 +326,27 @@ export const UserReviews = [
 
 export const ArchitectureJourneyCards = [
   {
-    highlightedText: "500K+",
-    title: "Meetings Scheduled",
+    highlightedText: "Monetize",
+    title: "Your Influence",
     description:
-      "Our platform has facilitated over half a million meetings, ensuring that professionals can connect.",
+      "More than 2k people have already earned just by using goformeet app. You can effortlessly earn cash by simply meeting people with no special skills required.",
   },
   {
-    highlightedText: "2K+",
-    title: "Hosts",
+    highlightedText: "One-click",
+    title: "Scheduling",
     description:
-      "We have a growing global community of over 2,000 active hosts.",
+      "Hassle free connection with your followers with seamless booking through goformeet. More than 2k people meet their desired host and embraced connection",
   },
   {
-    highlightedText: "98%",
-    title: "Attendance Rate",
+    highlightedText: "Easily withdraw",
+    title: "your earning",
     description:
-      "Our robust scheduling system and automated reminders have resulted in an impressive 98% meeting attendance rate.",
+      "The process of accessing your earnings is seamless.  you can quickly and securely transfer your income to all mode of digital payment method",
   },
   {
-    highlightedText: "4.8/5",
+    highlightedText: "4/5",
     title: "User Rating",
     description:
       "Our users consistently rate their experience on #Goformeet as 4.8 out of 5.",
-  }
+  },
 ];
