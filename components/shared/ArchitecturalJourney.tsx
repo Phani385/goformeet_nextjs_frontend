@@ -27,7 +27,7 @@ const ArchitecturalJourney = () => {
           ))}
         </div>
       </div>
-      <div>
+      <div className="h-full">
         <Image
           alt="Architectural journey"
           src="/assets/images/architectureJounrey.png"
