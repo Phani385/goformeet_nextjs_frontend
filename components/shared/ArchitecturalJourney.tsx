@@ -1,5 +1,7 @@
 import Image from "next/image";
 import React from "react";
+import ArchitecturalJourneyCard from "./ArchitecturalJourneyCard";
+import { ArchitectureJourneyCards } from "@/constants";
 
 const ArchitecturalJourney = () => {
   return (
@@ -20,6 +22,14 @@ const ArchitecturalJourney = () => {
           cutting-edge technology, ensuring security, efficiency, and ease of
           use for all users.
         </p>
+        <div className="lg:flex flex-wrap">
+          {
+            ArchitectureJourneyCards.map((card, index) => (
+              <ArchitecturalJourneyCard key={index} content={card} />
+            ))
+
+          }
+        </div>
       </div>
       <div>
         <Image

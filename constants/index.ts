@@ -314,7 +314,6 @@ export const FAQQuestions = [
   },
 ];
 
-
 export const UserReviews = [
   {
     imageUrl: "/assets/images/userReview.jpeg",
@@ -323,4 +322,31 @@ export const UserReviews = [
     review:
       "As an actress, my schedule is always packed with auditions, rehearsals, and meetings with directors and producers. #Goformeet has been a game-changer for managing my busy calendar. Thanks to #Goformeet, I can focus more on my craft and less on logistical headaches. I highly recommend it to anyone in the entertainment industry!",
   },
-]
+];
+
+export const ArchitectureJourneyCards = [
+  {
+    highlightedText: "500K+",
+    title: "Meetings Scheduled",
+    description:
+      "Our platform has facilitated over half a million meetings, ensuring that professionals can connect.",
+  },
+  {
+    highlightedText: "2K+",
+    title: "Hosts",
+    description:
+      "We have a growing global community of over 2,000 active hosts.",
+  },
+  {
+    highlightedText: "98%",
+    title: "Attendance Rate",
+    description:
+      "Our robust scheduling system and automated reminders have resulted in an impressive 98% meeting attendance rate.",
+  },
+  {
+    highlightedText: "4.8/5",
+    title: "User Rating",
+    description:
+      "Our users consistently rate their experience on #Goformeet as 4.8 out of 5.",
+  }
+];
