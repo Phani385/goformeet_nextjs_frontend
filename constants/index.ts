@@ -329,7 +329,7 @@ export const ArchitectureJourneyCards = [
     highlightedText: "Monetize",
     title: "Your Influence",
     description:
-      "More than 2k people have already earned just by using goformeet app. You can effortlessly earn cash by simply meeting people with no special skills required.",
+      "You can effortlessly earn cash by simply meeting people with no special skills required",
   },
   {
     highlightedText: "One-click",
