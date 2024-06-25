@@ -11,7 +11,7 @@ import {
 const UserReviews = () => {
   return (
     <div className="custom-container bg-[#F9DCD4] h-screen flex flex-col lg:flex-row items-center py-16">
-      <h2 className="font-bold mb-2 text-2xl text-center lg:hidden">
+      <h2 className="font-bold text-3xl lg:text-4xl xl:text-5xl mb-2 text-center lg:hidden">
         What Our <span className="text-[#E03300]">Users</span> Say
       </h2>
       <Carousel className="w-full px-24">

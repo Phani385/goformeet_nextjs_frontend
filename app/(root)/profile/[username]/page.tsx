@@ -163,7 +163,7 @@ async function Profile({ params }: Props) {
         </div>
       </div>
       <div className="custom-container profile-bottom-container">
-        <div className="mt-48 min-w-64 text-justify text-sm">
+        <div className="mt-48 min-w-64 max-w-64 text-justify text-sm">
           <p>{profileData.personalDetails.aboutMe}</p>
           <div className="separation-line"></div>
         </div>

@@ -7,7 +7,7 @@ import { EarnWithUsCards } from "@/constants";
 
 const EarnWithGoformeet = () => {
   return (
-    <div className="bg-[#A92600] py-20 mb-10 lg:flex custom-container">
+    <div className="bg-[#A92600] py-20 mb-10 h-screen lg:flex custom-container">
       <div className="flex-1 mb-5">
         <h2 className="text-4xl mb-3 font-semibold text-[#F6BFB0]">
           Earn with <br />
@@ -25,7 +25,7 @@ const EarnWithGoformeet = () => {
         <Image
           src="/assets/images/earnWithUsLeftArt.svg"
           alt="Left Art"
-          className="w-full lg:w-3/4"
+          className="w-full lg:w-[250px] xl:w-[450px] mx-auto mt-10 mb-20 lg:mt-0 lg:ml-"
           width={250}
           height={100}
         />
@@ -39,7 +39,7 @@ const EarnWithGoformeet = () => {
         <Image
           src="/assets/images/earnWithUsRightArt.svg"
           alt="Right Art"
-          className="w-full lg:w-3/4 mx-auto mt-10"
+          className="w-full lg:w-[400px] xl:w-[600px] mx-auto lg:mt-6 xl:mt-20"
           width={250}
           height={100}
         />

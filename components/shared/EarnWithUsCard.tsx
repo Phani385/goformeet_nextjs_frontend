@@ -15,7 +15,7 @@ const EarnWithUsCard = ({
         </div>
       </CardHeader>
       <CardContent>
-        <h3 className="text-[#E03300] group-hover:text-white text-center mx-auto font-semibold text-xl mb-2">
+        <h3 className="text-[#E03300] group-hover:text-white text-center mx-auto font-semibold text-xl xl:text-2xl mb-2">
           {content.title}
         </h3>
       </CardContent>

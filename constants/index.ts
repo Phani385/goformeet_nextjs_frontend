@@ -5,7 +5,7 @@ export const navLinks = [
   },
   {
     label: "Our Hosts",
-    route: "/hosts",
+    route: "#hosts",
   },
 ];
 

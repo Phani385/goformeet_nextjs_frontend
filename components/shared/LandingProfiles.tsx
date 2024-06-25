@@ -5,7 +5,7 @@ import LandingProfileCard from "./LandingProfileCard";
 
 const LandingProfiles = () => {
   return (
-    <div className="landing-profiles">
+    <div className="landing-profiles" id="hosts">
       <h3 className="text-3xl lg:text-4xl xl:text-5xl text-center mb-8 font-bold">
         Meet Our <span className="text-[#E03300]">Hosts</span>
       </h3>

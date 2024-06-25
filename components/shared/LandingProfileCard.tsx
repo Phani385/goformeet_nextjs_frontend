@@ -1,7 +1,10 @@
+"use client";
+
 import Image from "next/image";
 import React from "react";
 import { Button } from "../ui/button";
 import DownloadAppModal from "./DownloadAppModal";
+import { useRouter } from "next/navigation";
 
 const LandingProfileCard = ({
   details,
@@ -14,6 +17,7 @@ const LandingProfileCard = ({
     location: string;
   };
 }) => {
+  const router = useRouter();
   return (
     <div className="profile-card relative">
       <div className="absolute top-[-50px] flex justify-center w-full rounded-md">
@@ -26,26 +30,29 @@ const LandingProfileCard = ({
         />
       </div>
       <div className="mt-12 rounded-md text-center">
-        <h4 className="text-2xl font-semibold text-[#F5BFB0]">
+        <h4 className="text-lg xl:text-xl font-semibold text-[#F5BFB0]">
           {details.name}
         </h4>
-        <p className="text-[#F5BFB0] mb-4">
-          {details.username},{details.location}
-        </p>
+        <p className="text-[#F5BFB0]">{details.username}</p>
+        <p className="text-[#F5BFB0] mb-4">{details.location}</p>
         <p className="text-[#F5BFB0] mb-8 text-ellipsis line-clamp-2">
           {details.description}
         </p>
-        <DownloadAppModal>
-          <Button className="secondary-button gap-2 items-center w-full">
-            Book Meeting
-            <Image
-              alt="Right Arrow"
-              src="/assets/icons/rightArrow.svg"
-              width={16}
-              height={16}
-            />
-          </Button>
-        </DownloadAppModal>
+
+        <Button
+          className="secondary-button gap-2 items-center w-full"
+          onClick={() => {
+            router.push(`/profile/${details.username.slice(1)}`);
+          }}
+        >
+          Book Meeting
+          <Image
+            alt="Right Arrow"
+            src="/assets/icons/rightArrow.svg"
+            width={16}
+            height={16}
+          />
+        </Button>
       </div>
     </div>
   );
