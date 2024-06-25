@@ -25,7 +25,7 @@ const EarnWithGoformeet = () => {
         <Image
           src="/assets/images/earnWithUsLeftArt.svg"
           alt="Left Art"
-          className="w-full lg:w-[250px] xl:w-[400px] min-[1440px]:w-[400px] mx-auto mt-10 mb-20 lg:mt-0 lg:ml-"
+          className="w-full lg:w-[250px] xl:w-[400px] min-[1600px]:w-[90%] mx-auto mt-10 mb-20 lg:mt-0 lg:ml-"
           width={250}
           height={100}
         />
@@ -39,7 +39,7 @@ const EarnWithGoformeet = () => {
         <Image
           src="/assets/images/earnWithUsRightArt.svg"
           alt="Right Art"
-          className="w-full lg:w-[400px] xl:w-[500px] min-[1440px]:w-[550px] mx-auto lg:mt-6 xl:mt-20"
+          className="w-full lg:w-[400px] xl:w-[500px] min-[1600px]:w-[90%]  mx-auto lg:mt-6 xl:mt-20 min-[1600px]:mt-32"
           width={250}
           height={100}
         />

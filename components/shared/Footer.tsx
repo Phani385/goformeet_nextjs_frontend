@@ -70,6 +70,15 @@ const Footer = () => {
               height={30}
             />
           </Link>
+          <Link href="https://goformeet.co/profile/goformeet" target="_blank">
+            <Image
+              src="/assets/icons/goformeet.png"
+              alt="Youtube"
+              className="footer-social-link"
+              width={30}
+              height={30}
+            />
+          </Link>
         </div>
       </div>
       <ul>

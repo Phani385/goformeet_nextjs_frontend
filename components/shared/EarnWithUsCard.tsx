@@ -8,7 +8,7 @@ const EarnWithUsCard = ({
   content: { title: string; icon: string; className: string };
 }) => {
   return (
-    <Card className={`bg-[#FCEBE6] lg:w-1/2 rounded-md mt-16 ${content.className}`}>
+    <Card className={`bg-[#FCEBE6] lg:w-1/2 lg:max-w-[300px] rounded-md mt-16 ${content.className}`}>
       <CardHeader className="items-center">
         <div className="p-7 w-[120px] flex justify-center bg-[#E033000D] rounded-full">
           <Image src={content.icon} alt="Card Icon" width={56} height={56} />
