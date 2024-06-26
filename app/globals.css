@@ -200,7 +200,7 @@
 }
 
 .profile-card {
-  @apply relative flex flex-col mt-0 items-center rounded-md bg-gradient-to-br from-[#A92600] to-[#430F00] w-full md:w-[45%] lg:min-w-[190px] flex-1 xl:min-w-[230px] xl:justify-around p-4 pt-16;
+  @apply relative flex flex-col mt-0 items-center rounded-md bg-gradient-to-br from-[#A92600] to-[#430F00] w-full md:max-w-[45%] lg:min-w-[190px] flex-1 xl:min-w-[230px] xl:justify-around p-4 pt-16;
 }
 
 .sign-in-button {
