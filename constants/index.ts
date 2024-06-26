@@ -11,11 +11,7 @@ export const navLinks = [
 
 export const footerLinks = [
   {
-    label: "Home",
-    route: "/",
-  },
-  {
-    label: "About Us",
+    label: "About",
     route: "/about",
   },
   {

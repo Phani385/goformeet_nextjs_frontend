@@ -9,7 +9,7 @@ import { FAQQuestions } from "@/constants";
 
 const FAQSection = () => {
   return (
-    <div className="custom-container py-20 h-screen flex flex-col justify-center architecture-journey">
+    <div className="custom-container py-20 lg:h-screen flex flex-col justify-center architecture-journey">
       <div>
         <h2 className="font-bold text-center mb-4 text-3xl lg:text-4xl xl:text-5xl">
           <span className="text-[#E03300]">Frequently</span> Asked Questions
@@ -23,7 +23,7 @@ const FAQSection = () => {
         {FAQQuestions.map((question) => (
           <AccordionItem key={question.id} value={question.id}>
             <AccordionTrigger className="flex items-center justify-between py-5 border-b border-[#FBE0D9]">
-              <h3 className="font-bold text-lg">{question.question}</h3>
+              <h3 className="font-bold text-lg text-left">{question.question}</h3>
             </AccordionTrigger>
             <AccordionContent className="py-5">
               <p className="text-sm">{question.answer}</p>

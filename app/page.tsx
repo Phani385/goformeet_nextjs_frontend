@@ -75,7 +75,7 @@ export default function Home() {
         <h2 className="text-3xl lg:text-4xl xl:text-5xl text-center mb-8 font-bold">
           We have been <span className="text-[#E03300]">Featured on</span>
         </h2>
-        <div className="flex justify-around">
+        <div className="flex justify-around flex-wrap">
           <Image src="/assets/images/dailyhunt.png" width={200} height={200} alt="Dailyhunt" />
           <Image src="/assets/images/medium.png" width={200} height={200} alt="Dailyhunt" />
           <Image src="/assets/images/gnews.png" width={200} height={200} alt="Dailyhunt" />

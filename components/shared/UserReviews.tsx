@@ -10,11 +10,11 @@ import {
 
 const UserReviews = () => {
   return (
-    <div className="custom-container bg-[#F9DCD4] h-screen flex flex-col lg:flex-row items-center py-16">
-      <h2 className="font-bold text-3xl lg:text-4xl xl:text-5xl mb-2 text-center lg:hidden">
+    <div className="custom-container bg-[#F9DCD4] lg:h-screen flex flex-col lg:flex-row items-center py-20">
+      <h2 className="font-bold text-3xl lg:text-4xl xl:text-5xl mb-4 lg:mb-2 text-center lg:hidden">
         What Our <span className="text-[#E03300]">Users</span> Say
       </h2>
-      <Carousel className="w-full px-24">
+      <Carousel className="w-[80%] lg:w-full lg:px-24">
         <CarouselContent>
           <CarouselItem>
             <div className="lg:flex items-center gap-20">

@@ -5,7 +5,7 @@ import { ArchitectureJourneyCards } from "@/constants";
 
 const ArchitecturalJourney = () => {
   return (
-    <div className="custom-container py-20 flex items-center architecture-journey">
+    <div className="custom-container py-20 lg:flex items-center architecture-journey">
       <div className="flex-1 py-10">
         <h2 className="text-3xl lg:text-4xl xl:text-5xl mb-8 font-bold">
           MEET, CONNECT AND{" "}
