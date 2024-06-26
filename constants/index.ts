@@ -20,7 +20,7 @@ export const footerLinks = [
   },
   {
     label: "Careers",
-    route: "/careers",
+    route: "https://www.linkedin.com/company/goformeet/jobs/",
   },
   {
     label: "Media Coverage",

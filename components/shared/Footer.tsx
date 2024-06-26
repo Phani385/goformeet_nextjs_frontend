@@ -127,13 +127,16 @@ const Footer = () => {
       </div>
       <div className="border-t border-t-[#E03300] text-[10px] md:text-[12px] flex flex-wrap justify-center gap-2 custom-container mx-8 lg:mx-28 py-4">
         <p className="text-[#B3BABF]">
-          Copyright © 2025 BRIX Agency | All Rights Reserved |
+        Goformeet consulting private limited | All Rights Reserved |
         </p>
         <Link href="/privacy-policy" className="text-[#E03300] underline">
           Privacy Policy |
         </Link>
         <Link href="/terms-of-service" className="text-[#E03300] underline">
-          Terms of Service
+          Terms of Service |
+        </Link>
+        <Link href="/terms-of-service" className="text-[#E03300] underline">
+          Refund Policy
         </Link>
       </div>
     </footer>
