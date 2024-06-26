@@ -15,20 +15,24 @@ export const footerLinks = [
     route: "/about",
   },
   {
-    label: "Features",
-    route: "/features",
+    label: "Team",
+    route: "/team",
   },
   {
-    label: "Pricing",
-    route: "/pricing",
+    label: "Careers",
+    route: "/careers",
   },
   {
-    label: "Testimonials",
-    route: "/testimonials",
+    label: "Media Coverage",
+    route: "/media-coverage",
   },
   {
-    label: "Privacy Policy",
-    route: "/privacy-policy",
+    label: "Investor Relations",
+    route: "/investor-relations",
+  },
+  {
+    label: "Support",
+    route: "/support",
   },
 ];
 

@@ -15,7 +15,7 @@ const EarnWithGoformeet = () => {
   };
 
   return (
-    <div className="bg-[#A92600] py-20 mb-10 lg:h-screen lg:flex custom-container">
+    <div className="bg-[#A92600] py-10 mb-10 lg:min-h-screen lg:flex custom-container">
       <div className="flex-1 mb-5">
         <h2 className="text-4xl xl:text-5xl mb-3 font-semibold text-[#F6BFB0]">
           Earn with <br />
