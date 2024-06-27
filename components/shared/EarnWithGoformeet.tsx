@@ -11,6 +11,23 @@ const EarnWithGoformeet = () => {
   const [mobileNumber, setMobileNumber] = useState("");
   const onClickSubmitBtn = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+
+    const url = `https://enterprise.smsgupshup.com/GatewayAPI/rest?userid=2000243143&password=Info@8714&send_to=+91${mobileNumber}&method=SendMessage&msg=Hi,%20Thank%20you%20for%20your%20interest%20in%20creating%20an%20account%20on%20GoForMeet.%20Please%20download%20our%20app:%20https://onelink.to/zyv2v2&msg_type=TEXT&&auth_scheme=plain&v=1.1&format=text`;
+
+    try {
+      const response = await fetch(url, {
+        method: "GET",
+      });
+
+      if (!response.ok) {
+        throw new Error(`Error: ${response.statusText}`);
+      }
+
+      console.log(response) // SMS sent successfully
+    } catch (error) {
+      console.error(error);
+      return false; // Failed to send SMS
+    }
     console.log(mobileNumber);
   };
 
