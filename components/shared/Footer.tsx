@@ -135,7 +135,7 @@ const Footer = () => {
         <Link href="/terms-of-service" className="text-[#E03300] underline">
           Terms of Service |
         </Link>
-        <Link href="/terms-of-service" className="text-[#E03300] underline">
+        <Link href="/refund-policy" className="text-[#E03300] underline">
           Refund Policy
         </Link>
       </div>
