@@ -12,11 +12,11 @@ export const navLinks = [
 export const footerLinks = [
   {
     label: "About",
-    route: "/about",
+    route: "/",
   },
   {
     label: "Team",
-    route: "/team",
+    route: "/",
   },
   {
     label: "Careers",
@@ -24,15 +24,15 @@ export const footerLinks = [
   },
   {
     label: "Media Coverage",
-    route: "/media-coverage",
+    route: "/",
   },
   {
     label: "Investor Relations",
-    route: "/investor-relations",
+    route: "/",
   },
   {
     label: "Support",
-    route: "/support",
+    route: "/",
   },
 ];
 
