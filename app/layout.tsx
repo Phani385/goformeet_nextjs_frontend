@@ -19,9 +19,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn("font-sans antialiased min-h-screen flex flex-col", arimo.variable)}>
+      <body
+        className={cn(
+          "font-sans antialiased min-h-screen flex flex-col",
+          arimo.variable
+        )}
+      >
         <Navbar />
-        {children}
+        <section className="flex-1">{children}</section>
         <Footer />
       </body>
     </html>

@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import axios from "axios";
 import React, { FormEvent, useState } from "react";
 import { Button } from "../ui/button";
 import { Input } from "../ui/input";
@@ -12,27 +13,22 @@ const EarnWithGoformeet = () => {
   const onClickSubmitBtn = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
-    const url = `https://enterprise.smsgupshup.com/GatewayAPI/rest?userid=2000243143&password=Info@8714&send_to=+91${mobileNumber}&method=SendMessage&msg=Hi,%20Thank%20you%20for%20your%20interest%20in%20creating%20an%20account%20on%20GoForMeet.%20Please%20download%20our%20app:%20https://onelink.to/zyv2v2&msg_type=TEXT&&auth_scheme=plain&v=1.1&format=text`;
-
     try {
-      const response = await fetch(url, {
-        method: "GET",
-      });
-
-      if (!response.ok) {
-        throw new Error(`Error: ${response.statusText}`);
+      const response = await axios.post("/api/send-message", { mobileNumber });
+      console.log(response.data);
+      if (response.status === 200) {
+        alert("OTP sent successfully");
+      } else {
+        alert("Failed to send OTP");
       }
-
-      console.log(response) // SMS sent successfully
     } catch (error) {
-      console.error(error);
-      return false; // Failed to send SMS
+      console.error("Error sending OTP:", error);
+      alert("Failed to send OTP");
     }
-    console.log(mobileNumber);
   };
 
   return (
-    <div className="bg-[#A92600] py-10 mb-10 lg:min-h-screen lg:flex custom-container">
+    <div className="bg-[#A92600] custom-container py-10 mb-10 lg:min-h-screen lg:flex ">
       <div className="flex-1 mb-5">
         <h2 className="text-4xl xl:text-5xl mb-3 font-semibold text-[#F6BFB0]">
           Earn with <br />
@@ -60,7 +56,7 @@ const EarnWithGoformeet = () => {
         <Image
           src="/assets/images/earnWithUsLeftArt.svg"
           alt="Left Art"
-          className="w-full lg:w-[250px] xl:w-[400px] min-[1600px]:w-[90%] mx-auto mt-10 mb-20 lg:mt-0 lg:ml-"
+          className="w-full lg:min-w-[250px] xl:min-w-[400px] min-[1600px]:min-w-[90%] mx-auto mt-10 mb-20 lg:mt-0 lg:px-10"
           width={250}
           height={100}
         />
@@ -74,7 +70,7 @@ const EarnWithGoformeet = () => {
         <Image
           src="/assets/images/earnWithUsRightArt.svg"
           alt="Right Art"
-          className="w-full lg:w-[400px] xl:w-[500px] min-[1600px]:w-[90%]  mx-auto lg:mt-6 xl:mt-20 min-[1600px]:mt-32"
+          className="w-full lg:min-w-[400px] xl:min-w-[500px] min-[1600px]:min-w-[90%]  mx-auto lg:mt-20 xl:mt-20 min-[1600px]:mt-32 lg:px-10"
           width={250}
           height={100}
         />
