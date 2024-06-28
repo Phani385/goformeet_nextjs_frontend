@@ -2,6 +2,7 @@
 
 import { ColumnDef } from "@tanstack/react-table";
 import Link from "next/link";
+import { Button } from "./button";
 
 export type User = {
   slNo: number;
@@ -108,7 +109,7 @@ export const hostColumns: ColumnDef<Host>[] = [
     cell: ({ row }) => {
       return (
         <Link href={`/admin/profile/${row.getValue("userId")}}`}>
-          <button className="px-5 py-2 bg-[#1bcfb4] text-white font-semibold w-fit mx-auto">
+          <Button className="border-[#E03320]" variant="outline">
             View Profile
           </button>
         </Link>
