@@ -350,3 +350,46 @@ export const ArchitectureJourneyCards = [
       "Our users consistently rate their experience on #Goformeet as 4.8 out of 5.",
   },
 ];
+
+export const adminSidebarLinks = [
+  {
+    displayName: "Hosts",
+    pathName: "/admin/hosts",
+  },
+  {
+    displayName: "Guests",
+    pathName: "/admin/guests",
+  },
+  {
+    displayName: "Users",
+    pathName: "/admin/users",
+  },
+  {
+    displayName: "Referals",
+    pathName: "/admin/referals",
+  },
+  {
+    displayName: "Orders & Payments",
+    pathName: "/admin/orders",
+  },
+  {
+    displayName: "Stock Images",
+    pathName: "/admin/stock-images",
+  },
+  {
+    displayName: "Reported Hosts",
+    pathName: "/admin/reported-hosts",
+  },
+  {
+    displayName: "KYC Verification",
+    pathName: "/admin/kyc-verification",
+  },
+  {
+    displayName: "Withdrawls",
+    pathName: "/admin/withdrawls",
+  },
+  {
+    displayName: "Contacts Data",
+    pathName: "/admin/contacts-data",
+  },
+];
