@@ -111,7 +111,7 @@ export const hostColumns: ColumnDef<Host>[] = [
         <Link href={`/admin/profile/${row.getValue("userId")}}`}>
           <Button className="border-[#E03320]" variant="outline">
             View Profile
-          </button>
+          </Button>
         </Link>
       );
     }
