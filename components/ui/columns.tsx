@@ -33,6 +33,9 @@ export const userColumns: ColumnDef<User>[] = [
   },
   {
     header: "Created On",
+    cell: ({ row }) => {
+      return new Date(row.getValue("createdAt")).toLocaleDateString("en-GB");
+    },
     accessorKey: "createdAt",
   },
   {
