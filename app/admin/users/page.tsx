@@ -7,7 +7,8 @@ async function getData(): Promise<User[]> {
   const apiUrl = `${process.env.BACKEND_URL}/admin/get-users`;
 
   const response = await fetch(apiUrl,{cache: 'no-cache'});
-  const data = response.json();
+  const data = await response.json();
+  console.log(data[0]);
   return data;
 }
 
