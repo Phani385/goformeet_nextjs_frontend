@@ -6,9 +6,8 @@ import { DataTable } from "../../../components/ui/data-table";
 async function getData(): Promise<Host[]> {
   const apiUrl = `${process.env.BACKEND_URL}/admin/get-hosts`;
 
-  const response = await axios.get(apiUrl);
-  const data = response.data;
-  console.log(data[0])
+  const response = await fetch(apiUrl, { cache: "no-cache" });
+  const data = response.json();
   return data;
 }
 

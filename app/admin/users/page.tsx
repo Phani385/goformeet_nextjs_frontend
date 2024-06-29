@@ -6,7 +6,7 @@ import { DataTable } from "../../../components/ui/data-table";
 async function getData(): Promise<User[]> {
   const apiUrl = `${process.env.BACKEND_URL}/admin/get-users`;
 
-  const response = await fetch(apiUrl,{cache: 'no-store'});
+  const response = await fetch(apiUrl,{cache: 'no-cache'});
   const data = response.json();
   return data;
 }
