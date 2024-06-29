@@ -7,7 +7,7 @@ import { ImageResponse } from "next/og";
 export const runtime = "edge";
 
 const arimoRegularFontP = fetch(
-  new URL("../../../public/assets/Arimo-Regular.ttf", import.meta.url)
+  new URL("../../../public/assets/Arimo-Regular.ttf", import.meta.url), {cache: "no-cache"}
 ).then((res) => res.arrayBuffer());
 
 export async function GET(request: Request) {
