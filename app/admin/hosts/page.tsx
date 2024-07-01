@@ -23,12 +23,7 @@ const Hosts = async ({ searchParams }: { searchParams: SearchParams }) => {
   return (
     <div className="p-5">
       <h2 className="text-2xl font-bold">Hosts - {data.length}</h2>
-      {data && (
-        <DataTable
-          columns={hostColumns}
-          data={data}
-        />
-      )}
+      {data && <DataTable columns={hostColumns} data={data} />}
     </div>
   );
 };
