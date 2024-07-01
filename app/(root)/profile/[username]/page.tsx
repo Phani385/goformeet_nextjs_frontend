@@ -68,7 +68,8 @@ async function Profile({ params }: Props) {
   async function getProfileData() {
     try {
       const response = await fetch(
-        `${process.env.BACKEND_URL}/get-profile/${username}`, { cache: "no-cache" }
+        `${process.env.BACKEND_URL}/get-profile/${username}`,
+        { cache: "no-cache" }
       );
       const data = await response.json();
       return data.profile;
@@ -182,13 +183,30 @@ async function Profile({ params }: Props) {
             <section className="profile-bottom-section">
               <h2 className="profile-bottom-heading">Looking For</h2>
               <ul className="profile-cards-container">
-                {
-                  profileData.personalDetails.moreAboutMe?.lookingFor?.map(
-                    (lookingFor: string, index: number) => (
-                      <ProfileTextCard key={index} content={lookingFor} />
-                    )
+                {profileData.personalDetails.moreAboutMe?.lookingFor?.map(
+                  (lookingFor: string, index: number) => (
+                    <ProfileTextCard key={index} content={lookingFor} />
                   )
-                }
+                )}
+                {profileData.personalDetails.moreAboutMe?.meetingTypes
+                  .length !== 0 &&
+                  profileData.personalDetails.moreAboutMe?.meetingTypes.map(
+                    (meetingType: string, index: number) => (
+                      <ProfileTextCard key={index} content={meetingType} />
+                    )
+                  )}
+              </ul>
+            </section>
+          )}
+          {profileData.personalDetails.yourExpertise.length !== 0 && (
+            <section className="profile-bottom-section">
+              <h2 className="profile-bottom-heading">My Expertise</h2>
+              <ul className="profile-cards-container">
+                {profileData.personalDetails.yourExpertise?.map(
+                  (expertise: string, index: number) => (
+                    <ProfileTextCard key={index} content={expertise} />
+                  )
+                )}
               </ul>
             </section>
           )}
@@ -207,22 +225,29 @@ async function Profile({ params }: Props) {
           <section className="profile-bottom-section">
             <h2 className="profile-bottom-heading">More About Me</h2>
             <ul className="profile-cards-container">
-              {
-                profileData.personalDetails.moreAboutMe?.height && <ProfileTextCard
+              {profileData.personalDetails.moreAboutMe?.height && (
+                <ProfileTextCard
                   content={`Height - ${profileData.personalDetails.moreAboutMe?.height}`}
                 />
-              }
+              )}
 
               <ProfileTextCard
                 content={profileData.personalDetails.moreAboutMe.educationLevel}
               />
-              {profileData.personalDetails.moreAboutMe?.personalityType !== "None" && (
+              {profileData.personalDetails.moreAboutMe?.personalityType !==
+                "None" && (
                 <ProfileTextCard
                   content={`Personality Type - ${profileData.personalDetails.moreAboutMe.personalityType}`}
-                />)}
-              {profileData.personalDetails.moreAboutMe?.smokingHabits !== "None" && <ProfileTextCard
-                content={profileData.personalDetails.moreAboutMe.smokingHabits}
-              />}
+                />
+              )}
+              {profileData.personalDetails.moreAboutMe?.smokingHabits !==
+                "None" && (
+                <ProfileTextCard
+                  content={
+                    profileData.personalDetails.moreAboutMe.smokingHabits
+                  }
+                />
+              )}
             </ul>
           </section>
         </div>
