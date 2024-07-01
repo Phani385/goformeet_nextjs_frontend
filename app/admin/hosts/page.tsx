@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { Host, User, hostColumns } from "../../../components/ui/columns";
 import axios from "axios";
@@ -16,7 +18,8 @@ const Users = async () => {
   return (
     <div className="p-5">
       <h2 className="text-2xl font-bold">Hosts - {data.length}</h2>
-      <DataTable columns={hostColumns} data={data} />
+      {!data && <div>Loading...</div>}
+      {data && <DataTable columns={hostColumns} data={data} />}
     </div>
   );
 };

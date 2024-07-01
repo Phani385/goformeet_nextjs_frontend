@@ -182,9 +182,13 @@ async function Profile({ params }: Props) {
             <section className="profile-bottom-section">
               <h2 className="profile-bottom-heading">Looking For</h2>
               <ul className="profile-cards-container">
-                <ProfileTextCard
-                  content={profileData.personalDetails.moreAboutMe?.lookingFor}
-                />
+              {
+                profileData.personalDetails.moreAboutMe?.lookingFor?.map(
+                  (lookingFor: string, index: number) => (
+                    <ProfileTextCard key={index} content={lookingFor} />
+                  )
+                )
+              }
               </ul>
             </section>
           )}
