@@ -4,7 +4,7 @@ import { DataTable } from "../../../components/ui/data-table";
 
 const Hosts = async () => {
   console.log("Hosts")
-  const response = await fetch(`${process.env.FRONTEND_URL}/api/hosts`);
+  const response = await fetch(`${process.env.FRONTEND_URL}/api/hosts`, {cache: "no-store"});
   const data = await response.json();
   return (
     <div className="p-5">
