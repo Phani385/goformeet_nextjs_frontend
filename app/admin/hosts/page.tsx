@@ -3,7 +3,7 @@ import { hostColumns } from "../../../components/ui/columns";
 import { DataTable } from "../../../components/ui/data-table";
 
 const Hosts = async () => {
-  const response = await fetch(`${process.env.BACKEND_URL}/admin/get-hosts`, { cache: "no-cache" });
+  const response = await fetch(`${process.env.FRONTEND_URL}/api/hosts`);
   const data = await response.json();
   return (
     <div className="p-5">
