@@ -1,3 +1,5 @@
+import path from "path";
+
 export const navLinks = [
   {
     label: "Home",
@@ -358,7 +360,8 @@ export const adminSidebarLinks = [
   },
   {
     displayName: "Guests",
-    pathName: "/admin/guests",
+    // pathName: "/admin/guests",
+    pathName: "/admin",
   },
   {
     displayName: "Users",
@@ -366,30 +369,37 @@ export const adminSidebarLinks = [
   },
   {
     displayName: "Referals",
-    pathName: "/admin/referals",
+    // pathName: "/admin/referals",
+    pathName: "/admin",
   },
   {
     displayName: "Orders & Payments",
-    pathName: "/admin/orders",
+    // pathName: "/admin/orders",
+    pathName: "/admin",
   },
   {
     displayName: "Stock Images",
-    pathName: "/admin/stock-images",
+    // pathName: "/admin/stock-images",
+    pathName: "/admin",
   },
   {
     displayName: "Reported Hosts",
-    pathName: "/admin/reported-hosts",
+    // pathName: "/admin/reported-hosts",
+    pathName: "/admin",
   },
   {
     displayName: "KYC Verification",
-    pathName: "/admin/kyc-verification",
+    // pathName: "/admin/kyc-verification",
+    pathName: "/admin",
   },
   {
     displayName: "Withdrawls",
-    pathName: "/admin/withdrawls",
+    // pathName: "/admin/withdrawls",
+    pathName: "/admin",
   },
   {
     displayName: "Contacts Data",
-    pathName: "/admin/contacts-data",
+    // pathName: "/admin/contacts-data",
+    pathName: "/admin",
   },
 ];
