@@ -25,7 +25,11 @@ export async function GET(request: Request) {
     const username = hasUsername ? searchParams.get("username") : "username";
     console.log(username);
 
-    const imageUrl = `https://goformeet.s3.ap-south-1.amazonaws.com/${username}/${username}_1.png`;
+    const userDetails = await fetch(`${process.env.BACKEND_URL}/get-profile/${username}`, {cache: "no-cache"});
+    const userData = await userDetails.json();
+
+
+    const imageUrl = userData.profile.personalDetails.profileImages[0];
     console.log(imageUrl);
 
     return new ImageResponse(

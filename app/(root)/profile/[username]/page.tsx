@@ -159,7 +159,7 @@ async function Profile({ params }: Props) {
                   alt="Twitter"
                 />
               </li>
-            </ul>
+            </ul> 
           </div>
         </div>
       </div>
