@@ -68,7 +68,7 @@ async function Profile({ params }: Props) {
   async function getProfileData() {
     try {
       const response = await fetch(
-        `${process.env.BACKEND_URL}/get-profile/${username}`, { cache: "no-cache"}
+        `${process.env.BACKEND_URL}/get-profile/${username}`, { cache: "no-cache" }
       );
       const data = await response.json();
       return data.profile;
@@ -182,13 +182,13 @@ async function Profile({ params }: Props) {
             <section className="profile-bottom-section">
               <h2 className="profile-bottom-heading">Looking For</h2>
               <ul className="profile-cards-container">
-              {
-                profileData.personalDetails.moreAboutMe?.lookingFor?.map(
-                  (lookingFor: string, index: number) => (
-                    <ProfileTextCard key={index} content={lookingFor} />
+                {
+                  profileData.personalDetails.moreAboutMe?.lookingFor?.map(
+                    (lookingFor: string, index: number) => (
+                      <ProfileTextCard key={index} content={lookingFor} />
+                    )
                   )
-                )
-              }
+                }
               </ul>
             </section>
           )}
@@ -207,18 +207,22 @@ async function Profile({ params }: Props) {
           <section className="profile-bottom-section">
             <h2 className="profile-bottom-heading">More About Me</h2>
             <ul className="profile-cards-container">
-              <ProfileTextCard
-                content={`Height - ${profileData.personalDetails.moreAboutMe?.height}`}
-              />
+              {
+                profileData.personalDetails.moreAboutMe?.height && <ProfileTextCard
+                  content={`Height - ${profileData.personalDetails.moreAboutMe?.height}`}
+                />
+              }
+
               <ProfileTextCard
                 content={profileData.personalDetails.moreAboutMe.educationLevel}
               />
-              <ProfileTextCard
-                content={`Personality Type - ${profileData.personalDetails.moreAboutMe.personalityType}`}
-              />
-              <ProfileTextCard
+              {profileData.personalDetails.moreAboutMe?.personalityType !== "None" && (
+                <ProfileTextCard
+                  content={`Personality Type - ${profileData.personalDetails.moreAboutMe.personalityType}`}
+                />)}
+              {profileData.personalDetails.moreAboutMe?.smokingHabits !== "None" && <ProfileTextCard
                 content={profileData.personalDetails.moreAboutMe.smokingHabits}
-              />
+              />}
             </ul>
           </section>
         </div>
